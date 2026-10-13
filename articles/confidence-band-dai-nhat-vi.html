@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khi báo cáo AI writing tô dải độ tin cậy thấp: sửa câu high-confidence trước khi viết lại cả chương — HumanPen</title>
+<meta name="description" content="Dải low-confidence trên báo cáo AI writing: đọc như bất định; ưu tiên văn xuôi high-confidence. HumanPen.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/confidence-band-dai-nhat-vi.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}th,td{border:1px solid #ddd;padding:.45rem .6rem;text-align:left}th{background:#f6f6f6}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+
+<h1>Khi báo cáo AI writing tô dải độ tin cậy thấp: sửa câu high-confidence trước khi viết lại cả chương</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Trong các chương trình giảng dạy bằng tiếng Anh ở Ấn Độ và Đông Nam Á, bản đồ tô màu trên Moodle, Canvas hoặc Blackboard hiếm khi chỉ có một màu. Một số đoạn văn xuôi liên tục nằm trong <strong>dải low-confidence</strong> hoặc highlight nhạt. Nhóm chat thường đọc nhạt là “bỏ qua được” hoặc “máy đang đoán bừa”. Cả hai đều bỏ qua ý nghĩa phổ biến hơn: <strong>độ bất định cao hơn trên đoạn đó</strong>, chứ không phải phán quyết tác giả đã xong.</p>
+<p>Bài này nói về <strong>cách đọc dải độ tin cậy</strong> trước khi viết lại. Không hứa bất kỳ điểm số nào, và không phải hướng dẫn né phát hiện.</p>
+<h2>Low confidence không phải “an toàn” cũng không phải “có tội”</h2>
+<p>Thuật ngữ từng sản phẩm khác nhau, nhưng highlight low-confidence thường nghĩa là bộ ước lượng <strong>kém chắc chắn hơn</strong> rằng văn xuôi liên tục đủ điều kiện trong vùng đó khớp mẫu văn bản mô hình—hoặc nằm gần biên quyết định. Đó không phải đèn xanh vĩnh viễn, cũng không phải bằng chứng vi phạm.</p>
+<p>Nếu nhà trường đã yêu cầu chỉnh sửa, thứ tự bình tĩnh thường là: bắt đầu từ <strong>văn xuôi high-confidence</strong>, rồi ghi lại các đoạn low-confidence—không phải xóa sạch mọi đoạn nhạt trong một đêm.</p>
+<h2>Đọc chú giải trước, rồi mới đọc phần trăm</h2>
+<p>Mở <strong>báo cáo AI Writing đầy đủ</strong>. Tìm chú giải màu, chú thích cuối trang và giải thích confidence band. Huy hiệu LMS nén bản đồ thành một số; sự bất định nằm trên bản đồ.</p>
+<table><thead><tr><th>Tín hiệu</th><th>Cách đọc hợp lý</th><th>Đọc quá đà cần tránh</th></tr></thead><tbody>
+<tr><td>Văn xuôi high-confidence</td><td>Khớp mẫu mạnh hơn trên đoạn đó (theo công cụ)</td><td>“Bằng chứng tòa án dùng AI”</td></tr>
+<tr><td>Dải low-confidence / nhạt</td><td>Bất định cao hơn</td><td>“An toàn mãi” hoặc “phải xóa tối nay”</td></tr>
+<tr><td>Khối không chấm</td><td>Ngoài văn xuôi đủ điều kiện ở lượt này</td><td>“Phụ lục sạch hơn”</td></tr>
+<tr><td>% tổng</td><td>Tổng hợp trên văn xuôi đã chấm</td><td>“Cả tệp = số nguyên này”</td></tr>
+</tbody></table>
+<h2>Similarity vẫn là câu hỏi khác</h2>
+<p>Similarity thấp <strong>không</strong> hủy chỉ báo AI writing. Chỉ báo AI writing <strong>không</strong> chứng minh đạo văn. Dải độ tin cậy thêm lớp thứ ba: bạn có thể đang tranh luận về đoạn mà chính công cụ gắn nhãn bất định. Tách ba câu chuyện đó khi gặp giảng viên.</p>
+<h2>Năm bước trước khi gõ phím</h2>
+<ol>
+<li>Đợi xử lý xong; tải báo cáo đầy đủ, không chỉ thẻ cổng.</li>
+<li>Phác đề cương và đánh dấu high-confidence, low-confidence, khối không chấm.</li>
+<li>Xác nhận danh tính tệp: số attempt, DOCX vs PDF, dấu thời gian báo cáo.</li>
+<li>Hỏi học phần “chỉnh sửa” nghĩa là gì khi các dải không thống nhất.</li>
+<li>Nếu bắt buộc sửa, bắt đầu từ văn xuôi high-confidence; ghi lại dải nhạt trước khi quyết phạm vi.</li>
+</ol>
+<p>Tiếng Anh học thuật theo khuôn mẫu phổ biến ở nhiều chương trình Ấn Độ &amp; Đông Nam Á có thể trông “dễ đoán” với bộ ước lượng. Đó là quan sát mẫu, không phải phán quyết—và nhiễu hơn bên trong dải low-confidence.</p>
+<p>Quy trình cấp tài liệu—nhập báo cáo, chỉ sửa đoạn flagged, giữ trích dẫn &amp; bố cục—xem <a href="https://humanpen.net">HumanPen</a>. Vẫn <strong>không hứa</strong> thẻ LMS kế tiếp sẽ hiện gì.</p>
+<h2>Điểm chính</h2>
+<ul>
+<li>Đọc dải low-confidence như bất định, không phải thẻ thông hành hay bản án.</li>
+<li>Khi nhà trường yêu cầu sửa, ưu tiên văn xuôi high-confidence.</li>
+<li>Không công cụ trung thực nào nên được gọi là “đảm bảo đậu”.</li>
+</ul>
+<p>— Charles Li · HumanPen · https://humanpen.net</p>
+
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · confidence bands / pale highlights · map not verdict.</footer>
+</body></html>
