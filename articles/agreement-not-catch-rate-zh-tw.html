@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>別問哪個檢測器「抓得更多」：先問它們在同一批文本上多常達成一致 — HumanPen</title>
+<meta name="description" content="AI% 是閾值分類器對連續正文的輸出，不是作者身分測量。本地小-N 協議：已知來源文本、≥2 檢測器當評分者，報一致率與 Cohen’s kappa——不報過檢率。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/agreement-not-catch-rate-zh-tw.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>別問哪個檢測器「抓得更多」：先問它們在同一批文本上多常達成一致</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>宿舍群最愛問：「Turnitin 和 GPTZero，哪個抓得更兇？」這句話把檢測器當成捕鼠夾比命中率。較穩的問題是：對同一批已知來源的文本，兩台儀器多常給出同類判斷？一致率與 Cohen’s kappa，比「誰抓更多」更接近可複核的素養練習。</p>
+<p>本文談小-N 一致性協議的科普版。不承諾任何分數，也不是檢測規避指南。</p>
+<h2>AI% 在量什麼</h2>
+<p>報告上的 AI writing 百分比，通常是閾值分類器在「已評分的連續正文」上的輸出——它把一段文本壓成一條指示，不是對作者身分的法庭測量。相似度儀表板仍是另一套儀器：低相似度不能抵銷 AI writing 指示；AI writing 指示也不能證明抄襲。</p>
+<p>因此「誰抓得更多」往往在比閾值與涵蓋範圍，而不是在比誰更接近真相。先分清儀器，再談分歧。</p>
+<h2>小-N 本地協議：練判讀，不練過檢</h2>
+<p>不必等大公開基準。本地小樣本也能練團隊：每條文本來源已知（人寫聲明／純 LLM 鎖定提示／文件層級改寫並留過程日誌）；條件主題與體裁盡量匹配；至少兩台檢測器當「評分者」。</p>
+<p>主結果只報一致率與 Cohen’s kappa。禁止把 pass/bypass 率當成主敘事。提示詞、模型、設定與利益衝突全部揭露——這樣別人才可複核。</p>
+<h2>動筆前四步</h2>
+<ol><li>1. 先固定文本集合與來源標籤，再開檢測器；不要事後挑「好看」的樣本。</li><li>2. 對同一檔案鎖定同一版本（DOCX/PDF/時間戳），再並行跑 ≥2 台檢測器。</li><li>3. 把輸出記成「同類判斷／分歧」表，算一致率與 kappa——不要只貼截圖百分比。</li><li>4. 揭露提示詞、模型、閾值與隸屬關係；面談時分開陳述相似度與 AI writing。</li></ol>
+<h2>HumanPen 與記住</h2>
+<p>需要文件層級流程——匯入報告、只改 flagged 段、保留引用與排版——可看 HumanPen（<a href="https://humanpen.net">https://humanpen.net</a>）。它同樣不承諾下一張卡片會顯示什麼，也不把工具賣成「保證過檢」。</p>
+<p>重點：先問一致性，再問誰抓更多；AI% 是分類器輸出，不是作者身分；小-N 協議練判讀，不練過檢故事。</p>
+<h2>記住</h2>
+<ul><li>別問誰抓更多；問同一批文本上多常一致</li><li>AI%＝閾值分類器對連續正文的輸出，不是作者身分測量</li><li>小-N：已知來源＋≥2 檢測器＋一致率/kappa；禁止過檢率主敘事</li><li>揭露提示詞、模型、設定與 COI；誠實工具不保證過檢</li></ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · agreement not catch-rate · small-n protocol · no score guarantee.</footer>
+</body></html>
