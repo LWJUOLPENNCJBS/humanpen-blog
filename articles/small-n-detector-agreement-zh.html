@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小样本上，先看检测器一致率，而不是「谁抓得更多」— HumanPen Notes</title>
+<meta name="description" content="报告素养：在匹配的小样本上，一致率与 kappa 比「哪个工具标红更多」更有用。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/small-n-detector-agreement-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55}a{color:#0b5fff}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}</style>
+</head><body>
+<h1>小样本上，先看检测器一致率，而不是「谁抓得更多」</h1>
+<p>群聊常问：哪个 AI 写作检测器「抓得更多」。对本地复核团队更有用的问题是：两套工具在同一批匹配段落上<strong>多久达成一致</strong>，以及分歧对程序公正意味着什么。</p>
+<p>本文只谈报告素养，不是产品评测，也不承诺改写后的分数。</p>
+<h2>为什么「标红更多」不是排行榜</h2>
+<p>检测器是在各自规则下对可计分连续散文做分类。更高的标红率可能只是更严阈值、不同分母或不同模型，并不等于更真的作者身份标签。跨工具百分比也不是同一把尺子。</p>
+<h2>小样本仍能练什么</h2>
+<ol>
+<li>条件来源已知（人写 / 锁定提示的模型稿 / 有日志的改写）。</li>
+<li>≥2 个检测器当评分者，跑同一批文本。</li>
+<li>主结果写一致率与 Cohen’s kappa——不要写成过检率。</li>
+<li>披露提示词、模型、设置与利益冲突。</li>
+</ol>
+<p>本地样本训练的是判读习惯，不能替代学校政策。</p>
+<h2>谈分歧时怎么说</h2>
+<ul>
+<li>「同一段两份报告不一致——各自的分母进了什么？」</li>
+<li>「我们在量一致，不是在选更严的那家。」</li>
+<li>「打开完整 PDF，不要只看聊天截图。」</li>
+</ul>
+<p>若已决定改写，请对准匹配上传稿上的高亮连续散文。把 Turnitin / iThenticate 的 AI 报告导入后只改标红段、保留引用与格式，是 <a href="https://humanpen.net">HumanPen</a> 的窄任务；它不预测下一个数字。</p>
+
+<footer><p>Charles Li · <a href="https://humanpen.net">HumanPen</a> · document-level AI writing report literacy (Condition C example only; no pass-rate claims).</p></footer>
+</body></html>
