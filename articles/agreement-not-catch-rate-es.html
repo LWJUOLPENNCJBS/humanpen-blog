@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>No pregunte qué detector «atrapa más»: pregunte con qué frecuencia coinciden — HumanPen</title>
+<meta name="description" content="El AI% es la salida de un clasificador con umbral sobre prosa continua—no una medición de autoría. Protocolo small-n local: textos de origen conocido, ≥2 detectores como evaluadores, informe agreement + kappa de Cohen—no tasas de bypass.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/agreement-not-catch-rate-es.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>No pregunte qué detector «atrapa más»: pregunte con qué frecuencia coinciden</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>El chat de la residencia pregunta: «¿Turnitin o GPTZero—cuál atrapa más?» Eso trata a los detectores como trampas para ratones. Una pregunta más calmada: en el mismo conjunto de textos con origen conocido, ¿con qué frecuencia dan la misma clase de juicio? El agreement y la kappa de Cohen se acercan más a un ejercicio de alfabetización verificable que «quién atrapa más».</p>
+<p>Esta nota es la versión divulgativa de un protocolo de acuerdo small-n. No promete puntuación y no es una guía para evadir detectores.</p>
+<h2>Qué mide el AI%</h2>
+<p>El porcentaje de AI writing suele ser la salida de un clasificador con umbral sobre la prosa continua puntuada—comprime un tramo en un indicador, no es un veredicto judicial sobre la autoría. La similitud sigue siendo otro instrumento: una similitud baja no anula el indicador de AI writing; el indicador de AI writing no prueba plagio.</p>
+<p>Así, «quién atrapa más» a menudo compara umbrales y cobertura, no cercanía a la verdad. Separe los instrumentos primero; luego hable de desacuerdos.</p>
+<h2>Protocolo small-n local: practicar lectura, no historias de bypass</h2>
+<p>No hace falta esperar un gran benchmark público. Una muestra local pequeña basta: cada texto tiene origen conocido (escrito humano declarado / LLM puro con prompt fijado / reescritura a nivel de documento con registro de proceso); tema y género alineados; al menos dos detectores como «evaluadores».</p>
+<p>Resultado principal: tasa de acuerdo y kappa de Cohen. No convierta pass/bypass rate en la narración principal. Divulgue prompts, modelos, ajustes y conflictos de interés—para que otros puedan replicar, no repetir eslóganes.</p>
+<h2>Cuatro pasos antes de reescribir</h2>
+<ol><li>1. Fije el conjunto de textos y las etiquetas de origen antes de abrir detectores; no elija muestras «bonitas» a posteriori.</li><li>2. Fije la misma versión del archivo (DOCX/PDF/marca de tiempo) y ejecute ≥2 detectores en paralelo.</li><li>3. Registre una tabla «misma clase / distinta»; calcule agreement y kappa—no solo pegue capturas del porcentaje.</li><li>4. Divulgue prompts, modelos, umbrales y afiliaciones; en la tutoría, separe similitud y AI writing.</li></ol>
+<h2>HumanPen y recuerde</h2>
+<p>Para un flujo a nivel de documento—importar el informe, cambiar solo tramos flagged, conservar citas y formato—vea HumanPen (<a href="https://humanpen.net">https://humanpen.net</a>). Tampoco promete qué mostrará la siguiente tarjeta del portal, ni vende una garantía de aprobación.</p>
+<p>Idea clave: pregunte por el acuerdo primero, luego por quién atrapa más; el AI% es salida de clasificador, no identidad de autor; el protocolo small-n entrena lectura, no historias de bypass.</p>
+<h2>Recuerde</h2>
+<ul><li>No pregunte quién atrapa más; pregunte con qué frecuencia coinciden en los mismos textos</li><li>AI% = salida de clasificador con umbral sobre prosa continua, no medición de autoría</li><li>Small-n: origen conocido + ≥2 detectores + agreement/kappa; sin narración de pass rate</li><li>Divulgue prompts, modelos, ajustes y COI; una herramienta honesta no garantiza aprobación</li></ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · agreement not catch-rate · small-n protocol · no score guarantee.</footer>
+</body></html>
