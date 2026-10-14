@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kiểm tra lại sau khi detector cập nhật — kết quả vòng miễn phí trước đó hết hạn — HumanPen</title>
+<meta name="description" content="Khi Turnitin/iThenticate hoặc chính sách nhà trường cập nhật detector AI writing, hãy coi kết quả vòng miễn phí trước đó là hết hạn—nhập lại báo cáo mới trước khi viết lại thêm. Bổ sung match-report-version-before-rerun và reimport-report-after-pass. Không đảm bảo điểm số.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/recheck-after-detector-update-vi.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Kiểm tra lại sau khi detector cập nhật — kết quả vòng miễn phí trước đó hết hạn</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Trên <a href="https://humanpen.net">humanpen.net</a>, khi Turnitin / iThenticate (hoặc chính sách nhà trường) <strong>cập nhật detector AI writing</strong>, hãy coi kết quả vòng miễn phí trước đó là <strong>hết hạn</strong>. Nhập lại báo cáo <strong>mới</strong> trước khi viết lại thêm. Bản tô sáng cũ và AI% nhớ lại không còn mô tả detector mà văn phòng sẽ tin.</p>
+<p>Điều này bổ sung <strong>match-report-version-before-rerun</strong> (cùng bản dựng trước khi chạy lại) và <strong>reimport-report-after-pass</strong> (báo cáo mới sau mỗi vòng viết lại). Khác với free-rounds-until-under-20 / still-flagged-gets-free-rounds, leave-unflagged-prose-alone / only-flagged-continuous-prose, headings-styles-come-back / tables-captions-stay-intact và asterisk-under-20-means. Ghi chú này đặt tên <strong>kiểm tra lại sau cập nhật detector</strong>: thay đổi nhà cung cấp hoặc chính sách → xuất mới → nhập lại → rồi mới quyết định vòng tiếp.</p>
+<p>Không hứa AI% tiếp theo. Không tuyên bố “bypass detector” hay “undetectable”. Chính sách nhà trường vẫn quyết định việc thông qua.</p>
+<h2>Vì sao cập nhật detector làm hết hạn kết quả vòng miễn phí</h2>
+<ol>
+<li>Mở rộng mô hình hoặc ngôn ngữ có thể dịch chuyển tô sáng dù DOCX không đổi.</li>
+<li>Điều kiện vòng miễn phí theo khung trang chủ được xét trên báo cáo <strong>hiện tại</strong>—không phải báo cáo trước cập nhật.</li>
+<li>* under 20% nhớ từ bản dựng cũ chỉ là lịch sử; văn phòng sẽ yêu cầu bản xuất sau cập nhật.</li>
+<li>Bảng Similarity và AI có thể lệch sau thay đổi nhà cung cấp; chỉ bản xuất mới hiện cả hai.</li>
+<li>Khớp phiên bản báo cáo trước khi chạy lại vẫn thất bại nếu bạn chưa từng kiểm tra lại sau khi cập nhật.</li>
+</ol>
+<h2>Quy trình thực tế (khớp HumanPen)</h2>
+<ol>
+<li>Ghi tên detector, phiên bản sản phẩm và thông báo nhà trường (nếu có) rằng mô hình AI writing đã đổi.</li>
+<li>Xuất báo cáo AI writing Turnitin / iThenticate <strong>mới</strong> trên tệp bạn đang giữ.</li>
+<li>Nhập lại báo cáo mới đó vào <a href="https://humanpen.net">HumanPen</a>; bỏ bản đồ tô sáng trước cập nhật khỏi kế hoạch.</li>
+<li>Chỉ viết lại văn xuôi liên tục vẫn bị gắn cờ; đóng băng trích dẫn, số liệu, công thức, thuật ngữ và bố cục.</li>
+<li>Sau mỗi vòng, nhập lại lần nữa; vòng miễn phí (nếu có) chỉ áp dụng dưới báo cáo <strong>sau cập nhật</strong>.</li>
+</ol>
+<h2>Đây không phải</h2>
+<ul>
+<li>Không đảm bảo AI% sau cập nhật sẽ giảm hoặc vượt chính sách nhà trường.</li>
+<li>Không cho phép tiếp tục viết lại theo sổ vòng miễn phí trước cập nhật.</li>
+<li>Không phải “undetectable,” bypass, hay lời khuyên che giấu quyền tác giả.</li>
+<li>Không thay cho việc đọc Similarity và AI như hai điểm số trên bản xuất mới.</li>
+</ul>
+<h2>HumanPen phù hợp chỗ nào</h2>
+<p><a href="https://humanpen.net">HumanPen</a> tại <a href="https://humanpen.net">humanpen.net</a> là công cụ sửa AI cấp tài liệu: nhập báo cáo, viết lại văn xuôi liên tục gắn cờ, giữ trích dẫn và bố cục khi có thể, tính phí theo từ đã viết lại, và cung cấp vòng miễn phí cho các cờ còn lại theo khung trang chủ. Sau cập nhật detector, sự trung thực bắt đầu bằng nhập lại mới—không phải tranh luận từ kết quả vòng miễn phí đã hết hạn.</p>
+<h2>Nhớ</h2>
+<ul>
+<li>Cập nhật detector hoặc chính sách → báo cáo mới → nhập lại → rồi mới viết lại.</li>
+<li>Bổ sung match-report-version-before-rerun và reimport-report-after-pass.</li>
+<li>* under 20% trên bản dựng cũ là lịch sử—không phải kế hoạch sau cập nhật.</li>
+<li>Công cụ trung thực không bán “bypass” hay “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · kiểm tra lại sau cập nhật detector · không đảm bảo điểm số.</footer>
+</body></html>

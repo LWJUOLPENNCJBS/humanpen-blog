@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>检测器更新后要复检——此前的免费轮结果作废 — HumanPen</title>
+<meta name="description" content="当 Turnitin/iThenticate 或学校政策更新 AI 写作检测器时，把此前免费轮结果当作过期——再改写前先重新导入新报告。补充 match-report-version-before-rerun 与 reimport-report-after-pass；无分数保证。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/recheck-after-detector-update-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>检测器更新后要复检——此前的免费轮结果作废</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>在 <a href="https://humanpen.net">humanpen.net</a>，当 Turnitin / iThenticate（或学校政策）<strong>更新 AI 写作检测器</strong>时，把此前的免费轮结果当作<strong>过期</strong>。再改写前先<strong>重新导入新报告</strong>。旧高亮与记忆中的 AI% 已不再描述办公室会采信的检测器。</p>
+<p>这补充 <strong>match-report-version-before-rerun</strong>（再跑前对齐同一构建）与 <strong>reimport-report-after-pass</strong>（每轮改写后导入新报告）。它不同于 free-rounds-until-under-20 / still-flagged-gets-free-rounds（免费轮范围）、leave-unflagged-prose-alone / only-flagged-continuous-prose（改什么）、headings-styles-come-back / tables-captions-stay-intact（版式保真）、asterisk-under-20-means（产品停止读法）。本文点名<strong>检测器更新后的复检</strong>：厂商或政策变更 → 新导出 → 再导入 → 再决定下一轮。</p>
+<p>不承诺下一次 AI%。不教「绕过检测 / undetectable」。学校政策仍决定是否结案。</p>
+<h2>为什么检测器更新会作废免费轮结果</h2>
+<ol>
+<li>模型或语言扩展可能在 DOCX 未变时仍移动高亮。</li>
+<li>主页口径下的免费轮资格对照的是<strong>当前</strong>报告——不是更新前的报告。</li>
+<li>旧构建上记忆中的 * under 20% 只是历史；办公室会要更新后的导出。</li>
+<li>Similarity 与 AI 面板在厂商变更后可能分叉；只有新导出能同时看到两者。</li>
+<li>若更新落地后从未复检，再跑前「对齐报告版本」仍然失败。</li>
+</ol>
+<h2>可执行流程（对齐 HumanPen）</h2>
+<ol>
+<li>记下检测器名称、产品版本，以及学校是否通知 AI 写作模型已变更。</li>
+<li>对你手头的文件导出<strong>新的</strong> Turnitin / iThenticate AI 写作报告。</li>
+<li>把该新报告重新导入 <a href="https://humanpen.net">HumanPen</a>；把更新前的高亮图当作计划作废。</li>
+<li>只改写仍被标出的连续散文；冻结引用、数字、公式、术语与版式。</li>
+<li>每轮后再导入；若有免费轮，只在<strong>更新后</strong>的报告下适用。</li>
+</ol>
+<h2>这不是什么</h2>
+<ul>
+<li>不保证更新后的 AI% 会下降或过学校政策线。</li>
+<li>不是允许继续按更新前的免费轮台账改写。</li>
+<li>不是「undetectable」、绕过，或隐藏署名的建议。</li>
+<li>不能替代在新导出上把 Similarity 与 AI 当作两个分数来读。</li>
+</ul>
+<h2>HumanPen 适合什么</h2>
+<p><a href="https://humanpen.net">HumanPen</a>（<a href="https://humanpen.net">humanpen.net</a>）是文档级 AI 改写工具：导入报告、改 flagged 连续散文、尽量保引用与版式、按改写字计费，并在主页口径下对剩余 flagged 提供免费轮次。检测器更新后，诚实的起点是重新导入新报告——而不是用过期的免费轮结果争辩。</p>
+<h2>记住</h2>
+<ul>
+<li>检测器或政策更新 → 新报告 → 再导入 → 再改写。</li>
+<li>补充 match-report-version-before-rerun 与 reimport-report-after-pass。</li>
+<li>旧构建上的 * under 20% 是历史——不是更新后的计划。</li>
+<li>诚实工具不卖「绕过」或「undetectable」。</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · 检测器更新后复检 · 无分数保证。</footer>
+</body></html>
