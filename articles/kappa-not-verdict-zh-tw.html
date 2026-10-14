@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cohen’s kappa 不是「抓獲率」：小樣本檢測研究裡，先問工具多常達成一致 — HumanPen</title>
+<meta name="description" content="在來源已知的小樣本上，報告≥2個檢測器的一致率與 kappa，而不是誰「抓得更多」。HumanPen 只作條件 C 文件層級改寫示例，從不承諾過檢。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/kappa-not-verdict-zh-tw.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Cohen’s kappa 不是「抓獲率」：小樣本檢測研究裡，先問工具多常達成一致</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>校園討論常問：哪個 AI 寫作檢測器「抓得更多」？這把工具當成獵人。較穩的小樣本協議問另一件事：同一批有標籤文本上，兩個檢測器多常一致——Cohen’s kappa 是多少？</p>
+<p>本文延續檢測器報告素養：不承諾分數、排行或任何「保證過檢」。只說明為何面談裡，一致率比抓獲率更公平。</p>
+<h2>kappa 在回答什麼</h2>
+<p>一致率是兩邊落在同一閾值側的文本占比；kappa 再校正偶然一致。兩者都不是作者身分判決，只描述固定集合上評分者的concordance。</p>
+<p>對條件 A（聲明人寫）文本旗標更多的工具，不等於「更嚴更好」——可能抬高假陽性。沒有來源已知設計的抓獲率，會把這種代價藏起來。</p>
+<h2>可重用的小-N 草圖</h2>
+<p>來源已知：條件 A 人寫聲明、條件 B 鎖定提示的純 LLM、條件 C 對 B 做帶過程日誌的文件層級改寫。條件間主題／體裁匹配。≥2 檢測器當評分者。揭露提示、模型、設定與隸屬關係。</p>
+<p>主結果：一致率 + kappa。不要用 pass/bypass 率開場。工具分歧時，把分歧當成程序公平信號——至少有一個評分者在該條上錯了。</p>
+<h2>談話前四步</h2>
+<ol><li>1. 把研究問題寫成「一致」，而不是「誰抓得多」。</li><li>2. 表格列出每條文本的來源條件與兩邊檢測輸出。</li><li>3. 算一致率與 kappa；用白話記下分歧。</li><li>4. 若改寫入場，只作條件 C 過程變化——不是下一張入口卡片會清零的證據。</li></ol>
+<h2>HumanPen 與記住</h2>
+<p>HumanPen（<a href="https://humanpen.net">https://humanpen.net</a>）可作條件 C 文件層級改寫示例（匯入報告、只改 flagged 段、保留引用與排版）。它不賣檢測器排行，也不賣保證過檢。</p>
+<p>重點：kappa ≠ 抓獲率；小樣本也能練團隊判讀；分歧是公平資料。</p>
+<h2>記住</h2>
+<ul><li>先報一致率與 kappa，不要先比誰旗標更多</li><li>來源已知的 A/B/C 條件讓假陽性風險看得見</li><li>檢測器分歧 → 至少一錯；先問程序公平</li><li>HumanPen 是條件 C 過程示例——不是過檢產品</li></ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · kappa ≠ catch-rate · small-N agreement literacy · no score guarantee.</footer></body></html>
