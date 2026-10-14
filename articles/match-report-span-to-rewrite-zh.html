@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>改写应对准报告标出的跨度 — HumanPen</title>
+<meta name="description" content="改写目标应对准检测报告高亮的同一段落——不是旁边干净的句子，也不是整段「保险洗稿」。补充 import-report-rewrite-flagged-only 与 only-flagged-continuous-prose；无分数保证。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/match-report-span-to-rewrite-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>改写应对准报告标出的跨度</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>在 <a href="https://humanpen.net">humanpen.net</a>，改写目标应是 <strong>Turnitin / iThenticate AI 报告高亮的同一段落</strong>——不是旁边干净的句子，也不是整段「以防万一」的洗稿。<a href="https://humanpen.net">HumanPen</a> 按导入报告、对着那些 flagged 连续散文跨度动手来设计。</p>
+<p>这补充 <strong>import-report-rewrite-flagged-only</strong>（报告驱动瞄准）、<strong>only-flagged-continuous-prose</strong>（范围=被标连续散文）、<strong>leave-unflagged-prose-alone</strong>（干净跨度不动）、<strong>recheck-after-detector-update</strong>（厂商更新后复检）。它不同于 flagged-passages-first（优先级）、dont-wash-whole-document（反整篇洗）、freeze-citations-numbers-formulas / preserve-reference-list（保真冻结）、pay-by-rewritten-words（计费单位）。本文点名<strong>跨度对齐</strong>：高亮边界 → 改写那些边界。</p>
+<p>不承诺下一次 AI%。不教「绕过检测 / undetectable」。学校政策仍决定是否结案。</p>
+<h2>为什么要对齐跨度</h2>
+<ol>
+<li>旁边的干净散文不是被标单位——改它浪费力气，还可能制造新的 Similarity 或文风噪声。</li>
+<li>整段「保险洗稿」正是诚实工具拒绝的失败模式。</li>
+<li>报告高亮是你、工具与后续复检之间的共同地图。</li>
+<li>错位改写会让免费轮 / 再导入循环更难解读。</li>
+<li>文档级改写只有在计量表与冻结清单跟踪报告所标跨度时才成立。</li>
+</ol>
+<h2>可执行流程（对齐 HumanPen）</h2>
+<ol>
+<li>把 AI 写作报告导入 <a href="https://humanpen.net">HumanPen</a>；确认 attempt 身份与覆盖。</li>
+<li>先读高亮——记下每个 flagged 连续散文跨度的起止。</li>
+<li>只改那些跨度；旁边未标句子、引用、数字、公式与版式不动。</li>
+<li>导出后抽查：改动落在原高亮边界内，而不是旁边。</li>
+<li>下一轮重新导入新报告；若有免费轮，仍只作用于主页口径下仍被标出的散文。</li>
+</ol>
+<h2>这不是什么</h2>
+<ul>
+<li>不保证下一次 AI% 或 Similarity% 会下降或过学校政策线。</li>
+<li>不是允许把改写扩到未标邻居「图个安心」。</li>
+<li>不是「undetectable」、绕过，或隐藏署名的建议。</li>
+<li>不能替代 import-report-rewrite-flagged-only 的瞄准，或 leave-unflagged-prose-alone 对干净跨度的保护。</li>
+</ul>
+<h2>HumanPen 适合什么</h2>
+<p><a href="https://humanpen.net">HumanPen</a>（<a href="https://humanpen.net">humanpen.net</a>）是文档级 AI 改写工具：导入报告、改 flagged 连续散文、尽量保引用与版式、按改写字计费，并在主页口径下对剩余 flagged 提供免费轮次。让改写对准报告跨度，是这种诚实的一部分——不是可选项。</p>
+<h2>记住</h2>
+<ul>
+<li>改写高亮跨度——报告标出的同一段落。</li>
+<li>不是旁边干净句子；不是整段洗稿。</li>
+<li>补充 import-report-rewrite-flagged-only、only-flagged-continuous-prose、leave-unflagged-prose-alone、recheck-after-detector-update。</li>
+<li>诚实工具不卖「绕过」或「undetectable」。</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · 改写对准报告跨度 · 无分数保证。</footer>
+</body></html>

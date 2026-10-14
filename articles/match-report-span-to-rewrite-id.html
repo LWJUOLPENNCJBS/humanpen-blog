@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Samakan rewrite dengan rentang yang disorot laporan — HumanPen</title>
+<meta name="description" content="Target rewrite harus sama dengan bagian yang disorot laporan detektor—bukan kalimat bersih di sebelahnya atau cuci seluruh paragraf. Melengkapi import-report-rewrite-flagged-only dan only-flagged-continuous-prose. Tanpa jaminan skor.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/match-report-span-to-rewrite-id.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Samakan rewrite dengan rentang yang disorot laporan</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Di <a href="https://humanpen.net">humanpen.net</a>, target rewrite harus <strong>bagian yang sama yang disorot laporan AI Turnitin / iThenticate</strong>—bukan kalimat bersih di sebelahnya, dan bukan cuci seluruh paragraf “untuk berjaga-jaga.” <a href="https://humanpen.net">HumanPen</a> dibangun untuk mengimpor laporan dan bekerja pada rentang prosa kontinu yang ditandai itu.</p>
+<p>Ini melengkapi <strong>import-report-rewrite-flagged-only</strong> (laporan mengarahkan target), <strong>only-flagged-continuous-prose</strong> (cakupan = prosa kontinu yang ditandai), <strong>leave-unflagged-prose-alone</strong> (rentang bersih tetap), dan <strong>recheck-after-detector-update</strong> (laporan baru setelah pembaruan vendor). Berbeda dari flagged-passages-first, dont-wash-whole-document, freeze-citations-numbers-formulas / preserve-reference-list, dan pay-by-rewritten-words. Catatan ini menamai <strong>pencocokan rentang</strong>: batas sorotan → tulis ulang batas itu.</p>
+<p>Tidak ada janji AI% berikutnya. Tidak ada klaim “bypass detector” atau “undetectable”. Kebijakan sekolah tetap memutuskan kelulusan.</p>
+<h2>Mengapa pencocokan rentang penting</h2>
+<ol>
+<li>Prosa bersih di sebelah bukan unit yang ditandai—menulis ulang itu membuang upaya dan bisa menambah noise Similarity atau gaya.</li>
+<li>Cuci seluruh paragraf “demi aman” adalah mode gagal yang ditolak alat jujur.</li>
+<li>Sorotan laporan adalah peta bersama antara Anda, alat, dan pemeriksaan ulang nanti.</li>
+<li>Rewrite yang meleset membuat putaran gratis / impor ulang lebih sulit ditafsirkan.</li>
+<li>Revisi tingkat dokumen hanya bekerja jika meter dan daftar beku mengikuti rentang yang sama yang ditandai laporan.</li>
+</ol>
+<h2>Alur praktis (selaras HumanPen)</h2>
+<ol>
+<li>Impor laporan AI writing ke <a href="https://humanpen.net">HumanPen</a>; konfirmasi identitas attempt dan cakupan.</li>
+<li>Baca sorotan dulu—catat awal/akhir setiap rentang prosa kontinu yang ditandai.</li>
+<li>Tulis ulang hanya rentang itu; biarkan kalimat tak ditandai di sebelah, sitasi, angka, rumus, dan tata letak.</li>
+<li>Ekspor dan periksa: teks yang berubah berada di dalam batas sorotan lama, bukan di sampingnya.</li>
+<li>Impor ulang laporan baru untuk putaran berikutnya; putaran gratis (jika ada) tetap hanya untuk prosa yang masih ditandai menurut framing beranda.</li>
+</ol>
+<h2>Ini bukan apa</h2>
+<ul>
+<li>Bukan jaminan AI% atau Similarity% berikutnya akan turun atau lolos kebijakan sekolah.</li>
+<li>Bukan izin memperluas rewrite ke tetangga yang tidak ditandai “agar aman.”</li>
+<li>Bukan “undetectable,” bypass, atau saran menyembunyikan kepengarangan.</li>
+<li>Bukan pengganti import-report-rewrite-flagged-only untuk target, atau leave-unflagged-prose-alone untuk rentang bersih.</li>
+</ul>
+<h2>Di mana HumanPen cocok</h2>
+<p><a href="https://humanpen.net">HumanPen</a> di <a href="https://humanpen.net">humanpen.net</a> adalah alat revisi AI tingkat dokumen: impor laporan, tulis ulang prosa kontinu yang ditandai, jaga sitasi dan tata letak sedapat mungkin, tagih per kata yang ditulis ulang, dan tawarkan putaran gratis pada flag tersisa menurut framing beranda. Menyelaraskan rewrite dengan rentang laporan adalah bagian dari kejujuran itu—bukan ekstra opsional.</p>
+<h2>Ingat</h2>
+<ul>
+<li>Tulis ulang rentang yang disorot—bagian yang sama yang ditandai laporan.</li>
+<li>Bukan kalimat bersih di sebelah; bukan cuci seluruh paragraf.</li>
+<li>Melengkapi import-report-rewrite-flagged-only, only-flagged-continuous-prose, leave-unflagged-prose-alone, recheck-after-detector-update.</li>
+<li>Alat jujur tidak menjual “bypass” atau “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · samakan rentang laporan dengan rewrite · tanpa jaminan skor.</footer>
+</body></html>
