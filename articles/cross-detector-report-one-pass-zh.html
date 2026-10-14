@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>一次流程同时用相似度报告与 AI 检测高亮 — HumanPen</title>
+<meta name="description" content="一次 HumanPen 流程可同时导入相似度报告与 AI 检测高亮——只改重叠或被标出的连续散文，不动干净跨度。补充 similarity-vs-ai-two-scores；无分数保证。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/cross-detector-report-one-pass-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>一次流程同时用相似度报告与 AI 检测高亮</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>在 <a href="https://humanpen.net">humanpen.net</a>，一次 <a href="https://humanpen.net">HumanPen</a> 流程可同时基于<strong>相似度报告</strong>与<strong>AI 检测高亮</strong>工作——导入两者，只改重叠或被标出的连续散文，并让干净跨度保持不动。</p>
+<p>这补充 <strong>similarity-vs-ai-two-scores</strong>（两分两读）、<strong>import-report-rewrite-flagged-only</strong>（报告驱动瞄准）、<strong>match-report-span-to-rewrite</strong>（改写对准高亮跨度）、<strong>recheck-after-detector-update</strong>（厂商更新后重检）。它不同于 leave-unflagged-prose-alone、only-flagged-continuous-prose、dont-wash-whole-document、pay-by-rewritten-words。本文点名<strong>跨检测器一次导入</strong>：相似度 + AI 高亮 → 一次只改 flagged 连续散文。</p>
+<p>不承诺下一次 AI% 或 Similarity%。不教「绕过检测 / undetectable」。学校政策仍决定是否结案。</p>
+<h2>为什么要对两份报告做一次流程</h2>
+<ol>
+<li>相似度与 AI 分是两套表——但学生常在同一场作业里同时握着两份导出。</li>
+<li>重叠的 flagged 连续散文应改一次，而不是用冲突措辞改两遍。</li>
+<li>两份报告都未标出的干净跨度应保持不动。</li>
+<li>整篇洗稿工具无视两张地图，把一切都 scrub 掉。</li>
+<li>诚实工具导入两张地图，然后只按被标出的连续散文改写与计费。</li>
+</ol>
+<h2>可执行流程（对齐 HumanPen）</h2>
+<ol>
+<li>导出相似度报告与 AI 写作报告（或门户带两者的合并导出）。</li>
+<li>把两者导入 <a href="https://humanpen.net">HumanPen</a>；确认 attempt 身份与覆盖匹配你要改的草稿。</li>
+<li>只改重叠或被标出的连续散文跨度；保持干净邻居、引用、数字、公式与版式。</li>
+<li>不要跑两次整篇洗稿——对着合并后的 flagged 地图做一次流程。</li>
+<li>再导出；下一轮重新导入新报告。若有免费轮，仍只作用于主页口径下仍被标出的散文。</li>
+</ol>
+<h2>这不是什么</h2>
+<ul>
+<li>不保证下一次 AI% 或 Similarity% 会下降或过学校政策线。</li>
+<li>不授权把改写扩到两份报告都未标出的跨度。</li>
+<li>不是「undetectable」、绕过，或隐藏署名的建议。</li>
+<li>不能替代 similarity-vs-ai-two-scores 的读表，或 match-report-span-to-rewrite 的跨度对齐。</li>
+</ul>
+<h2>HumanPen 适合什么</h2>
+<p><a href="https://humanpen.net">HumanPen</a>（<a href="https://humanpen.net">humanpen.net</a>）是文档级 AI 改写工具：导入检测报告、改 flagged 连续散文、尽量保引用与版式、按改写字计费，并在主页口径下对剩余 flagged 提供免费轮次。跨相似度与 AI 高亮的一次流程属于这种诚实——不是两套互相打架的整篇改写。</p>
+<h2>记住</h2>
+<ul>
+<li>同一流程导入相似度与 AI 高亮；被标出的连续散文只改一次。</li>
+<li>干净跨度不动；不要整篇洗稿。</li>
+<li>补充 similarity-vs-ai-two-scores、import-report-rewrite-flagged-only、match-report-span-to-rewrite、recheck-after-detector-update。</li>
+<li>诚实工具不卖「绕过」或「undetectable」。</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · 跨检测器一次流程 · 无分数保证。</footer>
+</body></html>

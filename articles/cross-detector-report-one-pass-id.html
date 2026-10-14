@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Satu alur untuk laporan similaritas dan sorotan AI-detector — HumanPen</title>
+<meta name="description" content="Satu alur HumanPen dapat mengimpor laporan similaritas dan sorotan AI-detector sekaligus—hanya tulis ulang prosa kontinu yang tumpang tindih atau ditandai, biarkan rentang bersih. Melengkapi similarity-vs-ai-two-scores. Tanpa jaminan skor.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/cross-detector-report-one-pass-id.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Satu alur untuk laporan similaritas dan sorotan AI-detector</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Di <a href="https://humanpen.net">humanpen.net</a>, satu alur <a href="https://humanpen.net">HumanPen</a> dapat bekerja dari <strong>laporan similaritas</strong> dan <strong>sorotan AI-detector</strong> dalam alur yang sama—impor keduanya, tulis ulang hanya prosa kontinu yang tumpang tindih atau ditandai, dan biarkan rentang bersih tetap utuh.</p>
+<p>Ini melengkapi <strong>similarity-vs-ai-two-scores</strong> (dua skor, dua bacaan), <strong>import-report-rewrite-flagged-only</strong> (laporan mengarahkan target), <strong>match-report-span-to-rewrite</strong> (tulis ulang span yang disorot), dan <strong>recheck-after-detector-update</strong> (laporan baru setelah vendor berubah). Berbeda dari leave-unflagged-prose-alone, only-flagged-continuous-prose, dont-wash-whole-document, dan pay-by-rewritten-words. Catatan ini menamai <strong>impor lintas-detektor satu alur</strong>: similaritas + sorotan AI → satu pass hanya pada prosa kontinu yang ditandai.</p>
+<p>Tidak menjanjikan AI% atau Similarity % berikutnya. Tidak mengklaim “bypass detector” atau “undetectable”. Kebijakan sekolah tetap menentukan kelulusan.</p>
+<h2>Mengapa satu alur untuk kedua laporan</h2>
+<ol>
+<li>Similaritas dan skor AI adalah meter terpisah—tetapi mahasiswa sering memegang kedua ekspor dalam satu sesi.</li>
+<li>Prosa kontinu yang ditandai dan tumpang tindih harus ditulis ulang sekali, bukan dua kali dengan kata yang bertolak belakang.</li>
+<li>Rentang bersih yang tidak ditandai kedua laporan harus tetap utuh.</li>
+<li>Alat cuci seluruh dokumen mengabaikan kedua peta dan menyeka semuanya.</li>
+<li>Alat jujur mengimpor kedua peta, lalu menagih dan menulis ulang hanya prosa kontinu yang ditandai peta itu.</li>
+</ol>
+<h2>Alur praktis (selaras HumanPen)</h2>
+<ol>
+<li>Ekspor laporan similaritas dan laporan AI writing (atau ekspor portal gabungan yang memuat keduanya).</li>
+<li>Impor keduanya ke <a href="https://humanpen.net">HumanPen</a>; pastikan identitas attempt dan cakupan cocok dengan draf yang akan diedit.</li>
+<li>Tulis ulang hanya span prosa kontinu yang tumpang tindih atau ditandai; biarkan tetangga bersih, sitasi, angka, rumus, dan tata letak.</li>
+<li>Jangan jalankan dua cuci seluruh dokumen—satu alur terhadap peta flagged gabungan.</li>
+<li>Ekspor ulang; impor ulang laporan baru untuk putaran berikutnya. Putaran gratis (jika ada) tetap hanya untuk prosa yang masih ditandai sesuai kerangka beranda.</li>
+</ol>
+<h2>Ini bukan</h2>
+<ul>
+<li>Bukan jaminan AI% atau Similarity % berikutnya akan turun atau lolos kebijakan sekolah.</li>
+<li>Bukan izin memperluas rewrite ke span yang tidak ditandai kedua laporan.</li>
+<li>Bukan “undetectable,” bypass, atau saran menyembunyikan kepenulisan.</li>
+<li>Bukan pengganti similarity-vs-ai-two-scores untuk membaca meter, atau match-report-span-to-rewrite untuk penyelarasan span.</li>
+</ul>
+<h2>Di mana HumanPen cocok</h2>
+<p><a href="https://humanpen.net">HumanPen</a> di <a href="https://humanpen.net">humanpen.net</a> adalah alat revisi AI tingkat dokumen: impor laporan detektor, tulis ulang prosa kontinu yang ditandai, jaga sitasi dan tata letak bila memungkinkan, tagih per kata yang ditulis ulang, dan tawarkan putaran gratis untuk flag tersisa sesuai kerangka beranda. Satu alur lintas similaritas dan sorotan AI adalah bagian dari kejujuran itu—bukan dua rewrite seluruh file yang saling bertolak belakang.</p>
+<h2>Ingat</h2>
+<ul>
+<li>Impor similaritas dan sorotan AI dalam satu alur; tulis ulang prosa kontinu yang ditandai sekali saja.</li>
+<li>Biarkan rentang bersih; jangan cuci seluruh dokumen.</li>
+<li>Melengkapi similarity-vs-ai-two-scores, import-report-rewrite-flagged-only, match-report-span-to-rewrite, recheck-after-detector-update.</li>
+<li>Alat jujur tidak menjual “bypass” atau “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · satu alur lintas-detektor · tanpa jaminan skor.</footer>
+</body></html>

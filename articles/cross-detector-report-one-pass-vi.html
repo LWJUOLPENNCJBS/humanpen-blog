@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Một lượt cho báo cáo tương đồng và highlight AI-detector — HumanPen</title>
+<meta name="description" content="Một lượt HumanPen có thể nhập báo cáo tương đồng và highlight AI-detector cùng lúc—chỉ viết lại văn xuôi liên tục chồng/chịu gắn cờ, để yên đoạn sạch. Bổ sung similarity-vs-ai-two-scores. Không đảm bảo điểm.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/cross-detector-report-one-pass-vi.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Một lượt cho báo cáo tương đồng và highlight AI-detector</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Trên <a href="https://humanpen.net">humanpen.net</a>, một lượt <a href="https://humanpen.net">HumanPen</a> có thể làm việc từ <strong>báo cáo tương đồng</strong> và <strong>highlight AI-detector</strong> trong cùng quy trình—nhập cả hai, chỉ viết lại văn xuôi liên tục chồng hoặc bị gắn cờ, và để yên các đoạn sạch.</p>
+<p>Điều này bổ sung <strong>similarity-vs-ai-two-scores</strong> (hai điểm, hai cách đọc), <strong>import-report-rewrite-flagged-only</strong> (báo cáo dẫn nhắm), <strong>match-report-span-to-rewrite</strong> (viết lại đúng span được tô), và <strong>recheck-after-detector-update</strong> (báo cáo mới sau khi vendor đổi). Khác với leave-unflagged-prose-alone, only-flagged-continuous-prose, dont-wash-whole-document, và pay-by-rewritten-words. Ghi chú này gọi tên <strong>nhập xuyên detector một lượt</strong>: tương đồng + highlight AI → một lượt chỉ trên văn xuôi liên tục bị gắn cờ.</p>
+<p>Không hứa AI% hay Similarity % lần sau. Không “bypass detector” hay “undetectable”. Chính sách trường vẫn quyết định thông qua.</p>
+<h2>Vì sao một lượt cho cả hai báo cáo</h2>
+<ol>
+<li>Tương đồng và điểm AI là hai đồng hồ riêng—nhưng sinh viên thường cầm cả hai bản xuất trong một buổi.</li>
+<li>Văn xuôi liên tục bị gắn cờ và chồng nhau nên viết lại một lần, không hai lần với lời mâu thuẫn.</li>
+<li>Đoạn sạch mà cả hai báo cáo đều không đánh dấu phải để yên.</li>
+<li>Công cụ rửa cả tài liệu bỏ qua cả hai bản đồ và xóa sạch mọi thứ.</li>
+<li>Công cụ trung thực nhập cả hai bản đồ, rồi tính phí và viết lại chỉ văn xuôi liên tục mà bản đồ đã gắn cờ.</li>
+</ol>
+<h2>Quy trình thực tế (khớp HumanPen)</h2>
+<ol>
+<li>Xuất báo cáo tương đồng và báo cáo AI writing (hoặc bản xuất cổng gộp mang cả hai).</li>
+<li>Nhập cả hai vào <a href="https://humanpen.net">HumanPen</a>; xác nhận identity attempt và coverage khớp bản nháp sẽ sửa.</li>
+<li>Chỉ viết lại span văn xuôi liên tục chồng hoặc bị gắn cờ; giữ hàng xóm sạch, trích dẫn, số, công thức và bố cục.</li>
+<li>Đừng chạy hai lần rửa cả tài liệu—một lượt trên bản đồ flagged gộp.</li>
+<li>Xuất lại; nhập lại báo cáo mới cho vòng sau. Vòng miễn phí (nếu có) vẫn chỉ áp dụng cho văn xuôi còn bị gắn cờ theo khung trang chủ.</li>
+</ol>
+<h2>Đây không phải</h2>
+<ul>
+<li>Không đảm bảo AI% hay Similarity % lần sau sẽ giảm hoặc qua chính sách trường.</li>
+<li>Không cho phép mở rộng rewrite sang span mà cả hai báo cáo đều không gắn cờ.</li>
+<li>Không phải “undetectable,” bypass, hay lời khuyên giấu tác giả.</li>
+<li>Không thay cho similarity-vs-ai-two-scores khi đọc đồng hồ, hay match-report-span-to-rewrite khi căn span.</li>
+</ul>
+<h2>HumanPen phù hợp ở đâu</h2>
+<p><a href="https://humanpen.net">HumanPen</a> tại <a href="https://humanpen.net">humanpen.net</a> là công cụ chỉnh AI cấp tài liệu: nhập báo cáo detector, viết lại văn xuôi liên tục bị gắn cờ, giữ trích dẫn và bố cục khi có thể, tính theo từ đã viết lại, và cung cấp vòng miễn phí cho cờ còn lại theo khung trang chủ. Một lượt xuyên tương đồng và highlight AI thuộc sự trung thực đó—không phải hai lần viết lại cả file xung đột.</p>
+<h2>Nhớ</h2>
+<ul>
+<li>Nhập tương đồng và highlight AI trong một quy trình; viết lại văn xuôi liên tục bị gắn cờ một lần.</li>
+<li>Để yên đoạn sạch; đừng rửa cả tài liệu.</li>
+<li>Bổ sung similarity-vs-ai-two-scores, import-report-rewrite-flagged-only, match-report-span-to-rewrite, recheck-after-detector-update.</li>
+<li>Công cụ trung thực không bán “bypass” hay “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · một lượt xuyên detector · không đảm bảo điểm.</footer>
+</body></html>
