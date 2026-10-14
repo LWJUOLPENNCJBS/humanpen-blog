@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xuất lại phải giữ kiểu heading và nhấn mạnh — HumanPen</title>
+<meta name="description" content="Sau vòng viết lại chỉ phần gắn cờ, xuất lại phải giữ kiểu heading, đậm/nghiêng và khoảng đoạn—HumanPen không phải dump văn bản thuần lột định dạng. Bổ sung docx-layout-stays-intact và headings-styles-come-back. Không đảm bảo điểm số.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/reexport-keeps-styles-vi.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Xuất lại phải giữ kiểu heading và nhấn mạnh</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Trên <a href="https://humanpen.net">humanpen.net</a>, sau vòng <strong>viết lại chỉ phần gắn cờ</strong>, xuất lại phải giữ <strong>kiểu heading</strong>, <strong>đậm/nghiêng</strong> và <strong>khoảng đoạn</strong>. <a href="https://humanpen.net">HumanPen</a> không phải dump văn bản thuần lột định dạng và ép bạn sắp lại cả DOCX.</p>
+<p>Điều này bổ sung <strong>docx-layout-stays-intact</strong>, <strong>headings-styles-come-back</strong>, <strong>tables-captions-stay-intact</strong> và <strong>dont-wash-whole-document</strong>. Khác với freeze-citations-numbers-formulas / preserve-reference-list, only-flagged-continuous-prose / match-report-span-to-rewrite và pay-by-rewritten-words. Ghi chú này đặt tên <strong>giữ kiểu khi xuất lại</strong>: chỉnh văn xuôi gắn cờ → kiểu trở lại cùng tệp.</p>
+<p>Không hứa AI% tiếp theo. Không tuyên bố “bypass detector” hay “undetectable”. Chính sách nhà trường vẫn quyết định việc thông qua.</p>
+<h2>Vì sao xuất lại phải giữ kiểu</h2>
+<ol>
+<li>Kiểu heading và nhấn mạnh mang cấu trúc—dump văn bản thuần buộc bạn mất hàng giờ sắp lại.</li>
+<li>“Humanizer” cả tài liệu thường làm phẳng đậm/nghiêng và sập khoảng cách; đó là chế độ thất bại ghi chú này từ chối.</li>
+<li>Viết lại chỉ phần gắn cờ phải chạm văn xuôi liên tục, không reset stylesheet cả tài liệu.</li>
+<li>Sinh viên nộp DOCX theo mẫu bắt buộc; lột kiểu tạo thêm việc tuân thủ không liên quan báo cáo AI.</li>
+<li>Công cụ cấp tài liệu trung thực mặc định giữ kiểu khi xuất lại.</li>
+</ol>
+<h2>Quy trình thực tế (khớp HumanPen)</h2>
+<ol>
+<li>Nhập báo cáo AI writing Turnitin / iThenticate vào <a href="https://humanpen.net">HumanPen</a>.</li>
+<li>Chỉ viết lại văn xuôi liên tục bị gắn cờ; đóng băng trích dẫn, số, công thức, bảng và trường bố cục.</li>
+<li>Xuất lại DOCX (hoặc PPTX nếu hỗ trợ) và mở trong trình soạn thảo.</li>
+<li>Kiểm tra nhanh: kiểu Heading 1/2, đậm/nghiêng ngoài đoạn đã viết lại, và khoảng đoạn vẫn có vẻ cố ý.</li>
+<li>Nhập lại báo cáo mới cho vòng sau; vòng miễn phí (nếu có) vẫn chỉ cho văn xuôi vẫn bị gắn cờ theo khung trang chủ.</li>
+</ol>
+<h2>Đây không phải gì</h2>
+<ul>
+<li>Không đảm bảo AI% hay Similarity% tiếp theo sẽ giảm hoặc vượt chính sách nhà trường.</li>
+<li>Không khẳng định mọi kiểu tùy chỉnh lạ hay add-in bên thứ ba round-trip hoàn hảo.</li>
+<li>Không phải “undetectable,” bypass, hay lời khuyên che giấu tác quyền.</li>
+<li>Không thay thế docx-layout-stays-intact về bố cục tổng thể, hay headings-styles-come-back về độ trung thực heading.</li>
+</ul>
+<h2>HumanPen phù hợp chỗ nào</h2>
+<p><a href="https://humanpen.net">HumanPen</a> tại <a href="https://humanpen.net">humanpen.net</a> là công cụ chỉnh sửa AI cấp tài liệu: nhập báo cáo, viết lại văn xuôi liên tục bị gắn cờ, giữ trích dẫn và bố cục khi có thể, tính phí theo từ đã viết lại, và cung cấp vòng miễn phí trên các cờ còn lại theo khung trang chủ. Giữ kiểu khi xuất lại là một phần của sự trung thực đó—không phải tùy chọn thêm.</p>
+<h2>Nhớ</h2>
+<ul>
+<li>Sau viết lại chỉ phần gắn cờ, xuất lại phải giữ kiểu heading, nhấn mạnh và khoảng cách.</li>
+<li>Không phải dump văn bản thuần lột định dạng.</li>
+<li>Bổ sung docx-layout-stays-intact, headings-styles-come-back, tables-captions-stay-intact, dont-wash-whole-document.</li>
+<li>Công cụ trung thực không bán “bypass” hay “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · xuất lại giữ kiểu · không đảm bảo điểm số.</footer>
+</body></html>
