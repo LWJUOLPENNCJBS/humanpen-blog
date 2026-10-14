@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Giữ nguyên danh mục tài liệu tham khảo sau khi viết lại văn xuôi bị gắn cờ — HumanPen</title>
+<meta name="description" content="Danh mục / tài liệu tham khảo phải trở lại nguyên vẹn sau khi viết lại văn xuôi bị gắn cờ—HumanPen không phải công cụ rửa cả tài liệu làm xáo trộn trích dẫn. Bổ sung freeze-citations-numbers-formulas và tables-captions-stay-intact. Không đảm bảo điểm số.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/preserve-reference-list-vi.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Giữ nguyên danh mục tài liệu tham khảo sau khi viết lại văn xuôi bị gắn cờ</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>Trên <a href="https://humanpen.net">humanpen.net</a>, sau khi bạn viết lại <strong>văn xuôi liên tục bị gắn cờ</strong>, <strong>danh mục / tài liệu tham khảo</strong> phải trở lại <strong>nguyên vẹn</strong>—thứ tự, dấu câu, DOI và nội dung mục. <a href="https://humanpen.net">HumanPen</a> không phải công cụ rửa cả tài liệu làm xáo trộn hay “cải thiện” trích dẫn ở phần cuối.</p>
+<p>Điều này bổ sung <strong>freeze-citations-numbers-formulas</strong> (trích dẫn trong văn, số, công thức giữ nguyên) và <strong>tables-captions-stay-intact</strong> (bảng và chú thích giữ nguyên). Khác với keep-citations-through-loop, headings-styles-come-back / docx-layout-stays-intact, dont-wash-whole-document / only-flagged-continuous-prose / leave-unflagged-prose-alone và recheck-after-detector-update. Ghi chú này đặt tên <strong>bảo toàn danh mục tham khảo</strong>: chỉnh văn xuôi bị gắn cờ → để yên References / Works Cited / Bibliography trừ khi khối đó chính là văn xuôi liên tục bị gắn cờ.</p>
+<p>Không hứa AI% tiếp theo. Không tuyên bố “bypass detector” hay “undetectable”. Chính sách nhà trường vẫn quyết định việc thông qua.</p>
+<h2>Vì sao danh mục tham khảo phải nguyên vẹn</h2>
+<ol>
+<li>Các mục tham khảo là dữ liệu có cấu trúc (tác giả, năm, tiêu đề, nơi xuất bản, DOI)—rửa chúng dễ làm gãy trích dẫn và tạo nhiễu Similarity.</li>
+<li>“Humanizer” cả tài liệu thường sắp xếp lại, viết lại hoặc bỏ mục; đó là chế độ thất bại mà ghi chú này từ chối.</li>
+<li>Mã trích dẫn trong văn và danh mục cuối phải khớp; chỉ viết lại danh mục (hoặc chỉ văn xuôi mà không kiểm liên kết) sẽ phá cặp đó.</li>
+<li>Detector và panel Similarity thường xử lý khối tham khảo khác văn xuôi liên tục—đừng “tối ưu” danh mục để mong AI% thấp hơn.</li>
+<li>Công cụ cấp tài liệu trung thực mặc định đóng băng danh mục và chỉ đụng văn xuôi liên tục mà báo cáo thực sự đánh dấu.</li>
+</ol>
+<h2>Quy trình thực tế (khớp HumanPen)</h2>
+<ol>
+<li>Nhập báo cáo AI writing Turnitin / iThenticate vào <a href="https://humanpen.net">HumanPen</a>.</li>
+<li>Xác nhận span nào là văn xuôi liên tục bị gắn cờ—và khối References có bị gắn cờ không (thường không).</li>
+<li>Chỉ viết lại văn xuôi liên tục bị gắn cờ; đóng băng trích dẫn trong văn, số, công thức, thuật ngữ, bảng, chú thích và danh mục tham khảo.</li>
+<li>Sau khi xuất, kiểm tra nhanh: số mục, thứ tự, DOI/URL, và khóa trong văn còn khớp danh mục.</li>
+<li>Nhập lại báo cáo mới cho vòng sau; vòng miễn phí (nếu có) vẫn chỉ áp cho văn xuôi còn gắn cờ theo khung trang chủ—không phải để xáo trộn References.</li>
+</ol>
+<h2>Đây không phải</h2>
+<ul>
+<li>Không đảm bảo AI% hay Similarity% tiếp theo giảm hoặc vượt chính sách nhà trường.</li>
+<li>Không cho phép viết lại, dịch hay “làm đẹp” thư mục để trông ít máy hơn.</li>
+<li>Không phải “undetectable,” bypass, hay lời khuyên giấu quyền tác giả.</li>
+<li>Không thay thế freeze-citations-numbers-formulas cho mã trong văn, hay tables-captions-stay-intact cho hình bảng.</li>
+</ul>
+<h2>HumanPen phù hợp chỗ nào</h2>
+<p><a href="https://humanpen.net">HumanPen</a> tại <a href="https://humanpen.net">humanpen.net</a> là công cụ chỉnh sửa AI cấp tài liệu: nhập báo cáo, viết lại văn xuôi liên tục bị gắn cờ, giữ trích dẫn, danh mục tham khảo và bố cục khi có thể, tính phí theo chữ đã viết lại, và cung cấp vòng miễn phí cho cờ còn lại theo khung trang chủ. Giữ nguyên danh mục tham khảo là một phần của sự trung thực đó—không phải tùy chọn.</p>
+<h2>Nhớ</h2>
+<ul>
+<li>Văn xuôi bị gắn cờ có thể đổi; danh mục tham khảo phải trở lại nguyên vẹn.</li>
+<li>Bổ sung freeze-citations-numbers-formulas và tables-captions-stay-intact.</li>
+<li>Đừng rửa hay xáo trộn References để đuổi điểm.</li>
+<li>Công cụ trung thực không bán “bypass” hay “undetectable.”</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · giữ danh mục tham khảo · không đảm bảo điểm số.</footer>
+</body></html>
