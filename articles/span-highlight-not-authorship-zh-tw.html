@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高亮色塊不是作者身分：把「相似度」與「AI 寫作」拆成兩張儀表板再談 — HumanPen</title>
+<meta name="description" content="報告裡的 span 高亮是分類器對連續正文片段的信心標記，不是「這段是誰寫的」判決。相似度儀表板與 AI writing 儀表板量的是不同東西——面談時請分開陳述。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/span-highlight-not-authorship-zh-tw.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>高亮色塊不是作者身分：把「相似度」與「AI 寫作」拆成兩張儀表板再談</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>有人把報告裡的黃／橙／紅高亮當成作者身分貼紙：「這段被標了，就是 AI 寫的。」較穩的讀法是：高亮標的是分類器對某段連續正文的信心區間，不是法庭式的作者歸屬。</p>
+<p>本文延續檢測器報告素養：不承諾任何分數，也不教「保證過檢」。只談如何把兩套儀器分開讀。</p>
+<h2>Span 高亮在說什麼</h2>
+<p>多數校園報告會把「已評分的連續正文」切成 span，再給每個 span 塗信心色。色塊回答的是「這段表面統計更像哪一類」，不是「這段是誰鍵盤敲出來的」。</p>
+<p>短句、列表、公式化方法段、額外語言寫作，往往更容易觸發誤報色帶。改寫會改變表面統計，但過程與引用仍要能說明——教育問題不能只靠顏色回答。</p>
+<h2>兩套儀器，一間辦公室</h2>
+<p>相似度儀表板問的是：這段與語料庫有多像。AI writing 儀表板問的是：這段更像閾值分類器訓練裡的哪一類。低相似度不能抵銷 AI writing 指示；AI writing 指示也不能證明抄襲。</p>
+<p>並排截圖兩張儀表板，並不等於完成了證據審查。面談時，先說清「我們在談哪一張表」，再談下一步複核。</p>
+<h2>談話前四步</h2>
+<ol><li>1. 打開完整報告：圖例、涵蓋範圍、低信心色帶、attempt／版本——不要只轉發高亮截圖。</li><li>2. 把相似度與 AI writing 寫成兩段話；不要混成一句「分數很高」。</li><li>3. 若需改寫：優先處理高信心連續正文 flagged 段，保留引用與排版；不要迷信整篇重寫能鎖定下一張卡片。</li><li>4. 兩工具分歧時，把分歧記入談話——那是程序公平問題，不是「誰抓得更狠」的競賽。</li></ol>
+<h2>HumanPen 與記住</h2>
+<p>需要文件層級流程——匯入報告、只改 flagged 段、保留引用與排版——可看 HumanPen（<a href="https://humanpen.net">https://humanpen.net</a>）。它不承諾下一張卡片顯示什麼，也不賣「保證過檢」。</p>
+<p>重點：span 高亮 ≠ 作者身分；兩套儀表板分開談；分數最多是談話起點。</p>
+<h2>記住</h2>
+<ul><li>高亮是分類器信心標記，不是作者身分判決</li><li>相似度與 AI writing 是兩套儀器，面談時請分開陳述</li><li>兩工具分歧 → 至少有一個錯；先問程序公平</li><li>誠實工具不保證過檢；HumanPen 只提供文件層級改寫流程</li></ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · span highlight ≠ authorship · report literacy · no score guarantee.</footer>
+</body></html>

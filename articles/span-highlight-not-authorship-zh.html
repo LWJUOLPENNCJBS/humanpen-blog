@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高亮色块不是作者身份：把「相似度」和「AI 写作」拆成两张仪表盘再谈 — HumanPen</title>
+<meta name="description" content="报告里的 span 高亮是分类器对连续正文片段的置信标记，不是「这段是谁写的」判决。相似度仪表盘与 AI writing 仪表盘量的是不同东西——办公室谈话时请分开陈述。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/span-highlight-not-authorship-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>高亮色块不是作者身份：把「相似度」和「AI 写作」拆成两张仪表盘再谈</h1>
+<p class="muted">Charles Li / HumanPen</p>
+<p>有人把报告里的黄/橙/红高亮当成作者身份贴纸：「这段被标了，就是 AI 写的。」更稳妥的读法是：高亮标的是分类器对某段连续正文的置信区间，不是法庭式的作者归属。</p>
+<p>本文延续检测器报告素养：不承诺任何分数，也不教「保证过检」。只谈如何把两套仪器分开读。</p>
+<h2>Span 高亮在说什么</h2>
+<p>多数校园报告会把「已评分的连续正文」切成 span，再给每个 span 涂置信色。色块回答的是「这段表面统计更像哪一类」，不是「这段是谁键盘敲出来的」。</p>
+<p>短句、列表、公式化方法段、额外语言写作，往往更容易触发误报色带。改写会改变表面统计，但过程与引用仍要能说明——教育问题不能只靠颜色回答。</p>
+<h2>两套仪器，一间办公室</h2>
+<p>相似度仪表盘问的是：这段与语料库有多像。AI writing 仪表盘问的是：这段更像阈值分类器训练里的哪一类。低相似度不能抵消 AI writing 指示；AI writing 指示也不能证明抄袭。</p>
+<p>并排截图两张仪表盘，并不等于完成了证据审查。办公室谈话时，先说清「我们在谈哪一张表」，再谈下一步复核。</p>
+<h2>谈话前四步</h2>
+<ol><li>1. 打开完整报告：图例、覆盖范围、低置信色带、attempt/版本——不要只转发高亮截图。</li><li>2. 把相似度与 AI writing 写成两段话；不要混成一句「分数很高」。</li><li>3. 若需改写：优先处理高置信连续正文 flagged 段，保留引用与排版；不要迷信整篇重写能锁定下一张卡片。</li><li>4. 两工具分歧时，把分歧记入谈话——那是程序公平问题，不是「谁抓得更狠」的竞赛。</li></ol>
+<h2>HumanPen 与记住</h2>
+<p>需要文档级流程——导入报告、只改 flagged 段、保留引用与排版——可看 HumanPen（<a href="https://humanpen.net">https://humanpen.net</a>）。它不承诺下一张卡片显示什么，也不卖「保证过检」。</p>
+<p>要点：span 高亮 ≠ 作者身份；两套仪表盘分开谈；分数最多是谈话起点。</p>
+<h2>记住</h2>
+<ul><li>高亮是分类器置信标记，不是作者身份判决</li><li>相似度与 AI writing 是两套仪器，办公室谈话请分开陈述</li><li>两工具分歧 → 至少有一个错；先问程序公平</li><li>诚实工具不保证过检；HumanPen 只提供文档级改写流程</li></ul>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · span highlight ≠ authorship · report literacy · no score guarantee.</footer>
+</body></html>
