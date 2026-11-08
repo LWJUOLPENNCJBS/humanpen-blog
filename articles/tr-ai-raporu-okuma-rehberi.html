@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Yapay zekâ raporu: sayıdan karara tam okuma rehberi — HumanPen</title>
+<meta name="description" content="Yapay zekâ yazma raporunu baştan sona okumak için tek rehber: rapor neyi ölçer ve neyi ölçmez, karşılaştırılamayan üç sayı, revizyon kapsamı, belgede sağlam kalması gerekenler ve danışma saatinde ne götüreceğiniz. Sonuç garantisi vermeyen eğitici bir metin.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/tr-ai-raporu-okuma-rehberi.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yapay zekâ raporu: sayıdan karara tam okuma rehberi">
+<meta property="og:description" content="Tek bir sayıyı bütün bir belge hakkında hükme çevirmeyin: raporu okuma ve sınırlı kapsamda düzeltme rehberi.">
+<meta property="og:locale" content="tr">
+<style>body{font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.65;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.5rem;line-height:1.45}h2{font-size:1.2rem;margin-top:1.9rem}
+.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.3rem}
+footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}code{background:#f3f4f6;padding:.1rem .3rem;border-radius:3px;font-size:.9em}
+table{border-collapse:collapse;width:100%;font-size:.95rem;margin:1rem 0}
+th,td{border:1px solid #ddd;padding:.45rem .6rem;text-align:left}th{background:#f7f8fa}</style>
+</head><body>
+<nav class="muted"><a href="../">Ana sayfa</a><a href="https://humanpen.net/?utm_source=pages-blog-tr&utm_medium=referral&utm_campaign=spiral">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Yapay zekâ raporu: sayıdan karara tam okuma rehberi</h1>
+<p class="muted">Charles Li / HumanPen</p>
+
+<p>Mesaj genellikle en kötü anda gelir: teslimden bir gün önce, bir geri bildirim görüşmesinden hemen sonra ya da sınıf grubunda birinin paylaştığı ekran görüntüsüyle. Ekranda tek bir büyük sayı vardır — bir yüzde, bir rozet, renkli bir bant — ve arkasında kimsenin okumadığı onlarca sayfa durur. Sorun raporun kendisinde değil; bizim tek bir sayıyı bütün bir belge hakkında hükme çevirmemizde.</p>
+
+<p>Bu metin, dağınık hâlde duran kısa notları tek yerde topluyor: raporun neyi ölçtüğü ve neyi ölçmediği, karşılaştırılamayan üç sayı, rapordan sınırlı kapsamlı bir karara nasıl geçileceği, herhangi bir düzeltmeden sonra belgede neyin sağlam kalması gerektiği ve danışma saatine ne götüreceğiniz. Bu bir okuma ve işlem rehberidir; sonuç vaadi değildir.</p>
+
+<h2>1. Rapor neyi ölçer, neyi ölçmez</h2>
+
+<p>Yapay zekâ dedektörleri doğruluk makinesi değildir. Her parçaya yüzeysel özelliklere bakarak istatistiksel bir puan veren sınıflandırıcılardır: cümle uzunluğunun düzenliliği, paragraf yapısının tekrarı, üslup sapmalarının yokluğu, noktalama dağılımı, bazen kelime seçimi örüntüleri. Sonuç olasılık olarak okunur, kanıt olarak değil.</p>
+
+<p>Tam bu nedenle, baştan sona bir insanın yazdığı bir metin işaretlenebilir ve baştan sona üretilmiş bir metin işaretsiz geçebilir. İkisi de nadir bir arıza değil, aracın doğasının doğrudan sonucudur. Buradan rehberin ilk kuralı çıkar: <strong>rapor bir olasılık haritasıdır, hüküm değil.</strong></p>
+
+<p>Raporun ölçmediği ve herhangi bir tartışmadan önce kendinize açıkça söylemeniz gerekenler:</p>
+<ul>
+<li>Fikrin özgünlüğünü, akıl yürütmenin doğruluğunu, kaynakların niteliğini ölçmez.</li>
+<li>Harcadığınız emeği, saati, sildiğiniz taslak sayısını ölçmez.</li>
+<li>Dil, sürüm ya da kapsam değiştiğinde başka metinlerle güvenilir biçimde karşılaştırma yapmaz.</li>
+<li>Bir "intihal yüzdesi" üretmez — benzerlik ve üslup özellikleri tamamen ayrı iki sistemdir.</li>
+</ul>
+
+<h2>2. Karşılaştırılamayan üç sayı</h2>
+
+<p>Sınıf gruplarında en sık gördüğüm hata: iki sayıyı aynı ölçeğe aitmiş gibi yan yana koymak. Tek bir raporda doğası farklı üç sayı bir arada bulunur ve bunlar hiçbir aritmetik işlemle birbirine çevrilmez:</p>
+
+<table>
+<tr><th>Sayı</th><th>Ne anlatır</th><th>Neden karşılaştırılamaz</th></tr>
+<tr><td>Bildirilen yüzde</td><td>Belgede üretilmiş metin payı tahmini</td><td>Sürüme ve taranan kapsama bağlıdır</td></tr>
+<tr><td>Kapsam (coverage)</td><td>Belgenin ne kadarının gerçekten tarandığı</td><td>%60 kapsamlı belge ile %95 kapsamlı belge kıyaslanmaz</td></tr>
+<tr><td>Dedektör sürümü</td><td>Hükmü veren modelin sürümü</td><td>Sürüm değişimi zaman içi karşılaştırmayı geçersiz kılar</td></tr>
+</table>
+
+<p>Kapsamı %62 ve sürümü eski bir raporda "%45", kapsamı %97 ve sürümü yeni bir raporda "%18" okuyorsanız bir iyileşme görmüyorsunuz — ölçüm araçlarının değiştiğini görüyorsunuz. Pratik kural: <strong>iki sayıyı ancak kapsam, sürüm ve taranan metin aralığı eşitse karşılaştırın.</strong> Eşit değilse o karşılaştırma değil, izlenimdir.</p>
+
+<h2>3. Yıldız, tire ve güven bantları</h2>
+
+<p>Birçok rapor tek sayı vermez, bir aralık verir: yıldız, tire ya da griden kırmızıya bir renk şeridi. Aralık süsleme değildir — belirsizliğin açık kabulüdür ve kabul olarak okunmalıdır, kısaltılarak değil. Özet:</p>
+
+<ul>
+<li><strong>Yıldız</strong> genellikle "gösterim eşiğinin altında" demektir, "sıfır" değil. Sıfır ile "eşiğin altında" aynı şey değildir.</li>
+<li><strong>Tire</strong> "taranmadı" ya da "tarama hâlâ işleniyor" anlamına gelebilir. Karar vermeden önce işlemin bitmesini bekleyin.</li>
+<li><strong>Soluk bant</strong> o parçadaki güvenin düşük olduğunu gösterir. Ne beraat, ne mahkûmiyet sayın.</li>
+</ul>
+
+<p>İkinci yaygın hata: soluk bölgeyi "güvenli bölge" sayıp etrafındaki her şeyi yeniden yazmak, soluk bölgeyi ise atlamak. Doğrusu çoğu durumda tersidir: yüksek güvenli parçalar hocayla ilk konuşulacak parçalardır, çünkü sürümler arasında en tutarlı olanlar onlardır.</p>
+
+<h2>4. Rapordan karara: beş adım</h2>
+
+<p>Düzeltmeyle başlamayın. Sabitlemeyle başlayın. Aşağıdaki sıra hem yeniden çalışmayı hem de çözülemez tartışmayı önler:</p>
+
+<ol>
+<li><strong>Taranan sürümü sabitleyin.</strong> Orijinal dosyayı olduğu gibi saklayın; dosya adında tarih ve deneme kimliği (attempt ID) olsun. Sonraki her düzeltme bu dosyayla karşılaştırılmalı, hatıranızla değil.</li>
+<li><strong>Tam raporu indirin.</strong> Rozetin ekran görüntüsü rapor değildir. Kapsam, sürüm ve tarihle birlikte PDF ya da tam rapor sayfası gerekir.</li>
+<li><strong>Parça tablosu kurun.</strong> Üç sütun: parça numarası, güven düzeyi, ders talimatına göre düzeltilmesi gerekip gerekmediği. Bu aşamada fazlasını yazmayın.</li>
+<li><strong>Tek ve somut bir soru sorun.</strong> "Bu iyi mi?" değil, "Üçüncü parça yüksek güvenle işaretli — düzeltilmesi mi, yoksa raporda tartışılması mı isteniyor?"</li>
+<li><strong>Kapsamı editörü açmadan belirleyin.</strong> Tek satır yazın: "Yalnızca 3 ve 7. parçaları düzeltiyorum." Bu satırın dışındaki her parça olduğu gibi kalır.</li>
+</ol>
+
+<h2>5. Revizyon kapsamı: yalnızca işaretli parçalar</h2>
+
+<p>En yaygın tepki — "güvende olmak için belgenin tamamını yeniden yazayım" — çoğu durumda mevcut seçeneklerin en kötüsüdür. Yalnızca etik nedenlerle değil, tamamen işlemsel nedenlerle: her şeyi yeniden yazmak, sağlam olanı da kaybetmenize yol açar. Doğru olan cümleler belirsizleşir, numaralarına bağlı kaynaklar kopar, metinle uyumlu tablo çelişmeye başlar.</p>
+
+<p>Sınırlı kapsamlı düzeltme şu demektir: belirli girdi, belirli çıktı ve denetlenebilir bir etki. Bir paragrafı düzeltirseniz neyin değiştiğini gösterebilirsiniz. Bütün belgeyi yeniden yazarsanız hiçbir şeyi kanıtlayamazsınız — hocaya da, kendinize de. Kural: <strong>düzeltmeyi "…parçasını düzelttim" diye tek cümlede anlatamıyorsanız, düzeltmediniz, yeniden yazdınız.</strong> Adım adım işleyiş <a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/tr-revizyon-kapsami.html">revizyon kapsamı notunda</a>. Yeniden yazmak düzeltme değil, eski adı taşıyan yeni bir belgedir.</p>
+
+<h2>6. Sağlam kalması gerekenler</h2>
+
+<p>Herhangi bir düzeltmeden sonra şu öğeler tam olarak aynı kalmalı. Biri değiştiyse sorun üslup değil tekniktir ve her şeyden önce o çözülür:</p>
+
+<ul>
+<li><strong>Kaynaklar ve numaraları.</strong> Kaynakça yeniden numaralanırsa metin içi atıflar bozulur; hocanın ilk fark ettiği şey budur.</li>
+<li><strong>Tablolar ve başlıkları.</strong> Eksik satır ya da tablosundan kopmuş başlık = teslim edilemez belge.</li>
+<li><strong>Dipnotlar ve son notlar.</strong> Metindeki numaralarına bağlı kalmalı.</li>
+<li><strong>Denklemler ve semboller.</strong> Bir denklemin görsele ya da düz metne dönüşmesi anlamını yok eder.</li>
+<li><strong>Stiller ve başlıklar.</strong> Düzeyini kaybeden başlık içindekiler tablosunu kendiliğinden bozar.</li>
+<li><strong>Sayfa düzeni.</strong> Kenar boşlukları, sayfa sonları, sütunlar — hepsi belgenin parçasıdır, süsü değil.</li>
+</ul>
+
+<p>Bu liste aynı zamanda bir test listesidir: düzeltmeden sonra belgeyi açın ve orijinalle madde madde karşılaştırın. İki dakika sürer ve teslimattan önceki felaketlerin çoğunu yakalar.</p>
+
+<h2>7. Biçimler: DOCX, PDF, PPTX</h2>
+
+<p>Rapor bir Word belgesi, dışa aktarılmış bir PDF ya da bir sunum hakkında olabilir. Her biçimin düzeltme sırasında davranışı farklıdır:</p>
+
+<ul>
+<li><strong>DOCX:</strong> Stiller, kaynaklar ve dipnotlar görece korunur; ancak dosyayı farklı araçlar arasında dolaştırmak koşullu biçimlendirmeyi kaybettirir.</li>
+<li><strong>PDF:</strong> Düzenleme biçimi değildir. Düzeltmek ya yeniden kurmak ya da önce DOCX'e çevirmek demektir — ve hatalı dönüşüm yapısız metin üretir.</li>
+<li><strong>PPTX:</strong> En kırılgan olanı. Slayt metni belirli boyutlardaki metin kutularına bağlıdır; uzunluktaki her artış metni kutudan taşır ya da yazıtipini kendiliğinden küçültür. Çözüm "daha az yazmak" değil, slaytı yeniden kurmadan kutunun içinde düzeltmektir.</li>
+</ul>
+
+<p>Herhangi bir araçtan önce sorulacak doğru soru: "Dosyayı aynı biçimde ve aynı yapıyla geri verecek mi?" Yanıt net değilse düzeltme değil, fazladan iş üretmek üzeresiniz.</p>
+
+<h2>8. Danışma saatinde ne götürülür</h2>
+
+<p>Danışma saati mahkeme değildir ve savunmaya dönüşmemelidir. En iyi üç şeyle yürür: taranan sürüm, tam rapor ve tek somut soru. Götürmemeniz gerekenler de önemli: beş taslak ve "yapay zekâ nasıl çalışır" açıklamaları — bu görüşmenin konusu değil.</p>
+
+<p>Neredeyse bütün tartışmaları gerçekten bitiren üç soru:</p>
+<ol>
+<li>"İşaretli parçaları düzeltmem mi isteniyor, yoksa raporu bir notla tartışmam mı?"</li>
+<li>"Kapsam tam değilse, sonuç karar vermek için yeterli sayılıyor mu?"</li>
+<li>"Sonraki sürümde ne görmek istersiniz: düzeltilmiş parçalar mı, neyi düzelttiğime dair bir kayıt mı?"</li>
+</ol>
+
+<p>Görüşmenin hazırlığı ayrı bir not: <a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/tr-danisma-saati-rapor.html">danışma saatinde ne götürülür</a>.</p>
+
+<h2>9. İngilizce dışındaki metinlerde hata payı neden büyür</h2>
+
+<p>Dedektörlerin çoğu öncelikle İngilizce metinler üzerinde eğitildi ve ayarlandı. Model Türkçeye, Arapçaya, Endonezceye ya da Vietnamcaya uygulandığında yüzeysel özelliklerin doğruluğu düşer: noktalama örüntüleri farklıdır, cümle yapısı farklıdır, Türkçede eklemeli yapı ve ses olayları üslupla ilgisi olmayan bir çeşitlilik üretir.</p>
+
+<p>Pratik sonuç: İngilizce dışındaki metinlerde yüzde sürümler arasında daha az kararlıdır ve "işaretli" ile "işaretsiz" arasındaki eşik daha bulanıktır. Bu, raporun değersiz olduğu anlamına gelmez; hata payının daha geniş olduğu ve hocaya başvurmanın sayıya başvurmaktan daha önemli olduğu anlamına gelir.</p>
+
+<p>HumanPen'in otuzdan fazla dilde çalışmasının nedeni bu: Türkçe bir metnin yapısını koruyan düzeltme, İngilizce bir düzeltmenin çevrilmiş hâli değildir. Eklemeli çekim, ünlü uyumu, cümle bağlaçları — hepsi belgenin parçası olarak ele alınır, sonradan düzeltilecek ayrıntı olarak değil.</p>
+
+<h2>10. Zaman kaybettiren yaygın hatalar</h2>
+
+<ul>
+<li><strong>Belgeyi rozetten yargılamak.</strong> Rozet tek sayfanın özeti; tam rapordaki kapsam ve sürüm anlamı değiştirir.</li>
+<li><strong>Kapsamı farklı iki raporu kıyaslamak.</strong> İyileşme değil, farklı ölçüm. Bölüm 2'ye bakın.</li>
+<li><strong>"Güvende olmak için" tam yeniden yazım.</strong> Sağlam olanı kaybettirir, hiçbir şey kanıtlamaz. Bölüm 5.</li>
+<li><strong>Ekran paylaşırken düzeltmek.</strong> Toplantı sırasında taslağınızın değişmesini kimsenin görmesine gerek yok.</li>
+<li><strong>Sayıları hatırdan aktarmak.</strong> Sayı önünüzdeki dosyada yoksa tartışmada ona dayanmayın.</li>
+<li><strong>Benzerliği üslup özellikleriyle karıştırmak.</strong> İki ayrı sistem; karıştırmak tartışmayı ilk cümlede bozar.</li>
+</ul>
+
+<h2>11. Aracın bu işlemdeki yeri</h2>
+
+<p>HumanPen bir belge düzeltme aracıdır; dedektör değil, hüküm verici değil. İşlem içindeki yeri açık ve sınırlıdır: belgeyi alır, sizin seçtiğiniz parçaları yeniden yazar ve dosyayı aynı biçimde geri verir — DOCX, düzeni, stilleri, dipnotları ve kaynaklarıyla DOCX olarak kalır; PPTX, metin kutularıyla PPTX olarak kalır, görsele ya da düz metne dönüşmez.</p>
+
+<p>Bu yolda pratikte sağladıkları:</p>
+<ul>
+<li><strong>Yalnızca seçilen parçaların düzeltilmesi</strong> — belgenin tamamının yeniden yazılması değil.</li>
+<li><strong>Orijinal düzenin korunması</strong> — başlıklar, tablolar, dipnotlar, denklemler, kaynaklar yerinde kalır.</li>
+<li><strong>Otuzdan fazla dil desteği</strong> — aralarında Türkçe, Arapça, Farsça, Endonezce ve Vietnamca; yazı yönüne saygıyla.</li>
+<li><strong>Sunum dosyası desteği</strong> — tasarımı dağıtmadan slayt metnini düzeltme.</li>
+<li><strong>Kelime sınırı olmadan</strong> ve düzenlenebilir çıktı — düzleştirilmiş görsel değil.</li>
+<li><strong>Kayıtta ücretsiz deneme kredisi</strong> — herhangi bir taahhütten önce yolu kendi belgenizde deneyebilirsiniz.</li>
+</ul>
+
+<p>Sağlamadığı ve hiçbir dürüst aracın iddia etmemesi gereken şey: henüz üretilmemiş bir rapor için sonuç garantisi. Sonuç sürüme, kapsama ve dersin politikasına bağlıdır — hiçbiri bir aracın denetiminde değildir. Bunun aksini söyleyen size hizmet değil, teselli satıyor. <a href="https://humanpen.net/?utm_source=pages-blog-tr&utm_medium=referral&utm_campaign=spiral">humanpen.net</a> üzerinden başlayıp kendiniz deneyebilirsiniz.</p>
+
+<h2>12. Bu metnin sınırları</h2>
+
+<p>Bu metin hiçbir dedektörü geçme garantisi vermez, üretilmiş bir metnin nasıl gizleneceğini anlatmaz ve denetim sistemlerini atlatmak için "püf noktası" sunmaz. Amacı farklı: raporun gerçekte ne söylediğini anlamak, savunabileceğiniz sınırlı bir kapsamla hareket etmek ve bu sırada belgenizi sağlam tutmak. Dersiniz yeniden yazma araçlarının kullanımını yasaklıyorsa sorun rapor değil, politika; o da araçla değil, hocayla çözülür.</p>
+
+<h2>Altı maddede özet</h2>
+<ol>
+<li>Rapor bir olasılık haritasıdır, metniniz hakkında hüküm değil.</li>
+<li>Kapsam, sürüm ve taranan aralık eşitlenmeden iki sayıyı karşılaştırmayın.</li>
+<li>Yıldız, tire ve soluk bant farklı düzeylerde belirsizlik beyanlarıdır — öyle okuyun.</li>
+<li>Önce taranan sürümü sabitleyin, sonra okuyun, sonra kapsamı belirleyin, sonra düzeltin.</li>
+<li>Yalnızca işaretli parçaları düzeltin; tam yeniden yazım sağlam olanı da götürür.</li>
+<li>Düzeltmeden sonra sırayla kaynakları, tabloları, dipnotları, denklemleri, başlıkları ve sayfa düzenini denetleyin.</li>
+</ol>
+
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net/?utm_source=pages-blog-tr&utm_medium=referral&utm_campaign=spiral">humanpen.net</a></p>
+<footer>HumanPen · Charles Li · yapay zekâ raporu okuma rehberi · harita, hüküm değil · sonuç garantisi yok.</footer>
+</body></html>
