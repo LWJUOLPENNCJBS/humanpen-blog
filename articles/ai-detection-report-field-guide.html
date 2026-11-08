@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How to read an AI writing detection report: fields, bands, and what a rewrite can honestly change — HumanPen</title>
+<meta name="description" content="A field-by-field guide to Turnitin and iThenticate style reports: the AI writing indicator, segment highlighting, low-confidence bands, similarity vs authorship, and the report-driven rewrite loop that keeps DOCX and PPTX formatting intact. No score guarantees.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/ai-detection-report-field-guide.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}
+.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}
+table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}
+th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}
+th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Does the AI writing percentage cover the whole document?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. Vendors compute the indicator over the prose they are able to analyse and may exclude reference lists, quotations, tables, appendices and short fragments. Read the coverage note before treating the badge as a mark for the whole file."}},
+{"@type":"Question","name":"What is the difference between a similarity percentage and an AI writing indicator?","acceptedAnswer":{"@type":"Answer","text":"Similarity compares your text with a corpus of published and student work and reports overlap. The AI writing indicator estimates the likelihood that prose was machine-generated. They answer different questions and are produced by different models, so one can be high while the other is low."}},
+{"@type":"Question","name":"Should I rewrite passages that are only lightly highlighted?","acceptedAnswer":{"@type":"Answer","text":"Treat low-confidence bands as uncertainty rather than proof. Start with the segments carrying the strongest signal, re-check, and only then decide whether the pale band needs work. Rewriting everything at once makes it impossible to see which change moved the report."}},
+{"@type":"Question","name":"Will rewriting flagged passages keep my Word or PowerPoint layout?","acceptedAnswer":{"@type":"Answer","text":"Only if the tool edits the file itself rather than asking you to paste plain text. A document-level rewrite that operates on the DOCX or PPTX returns the same file with the original styling, tables, footnotes, captions and text boxes in place, and the slide text rewritten in position."}},
+{"@type":"Question","name":"Can any tool guarantee a clean report?","acceptedAnswer":{"@type":"Answer","text":"No. Detection is probabilistic, vendor models change between releases, and institutions set their own thresholds and policies. A tool can reduce the signals it is designed to reduce and give you a repeatable way to check, but the report outcome remains the vendor's estimate and your institution's decision."}}]}
+</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>How to read an AI writing detection report: fields, bands, and what a rewrite can honestly change</h1>
+<p class="muted">Charles Li / HumanPen · field guide · updated 8 Nov 2026</p>
+
+<p>Most students open a detection report, look at one number, and start rewriting the whole chapter. That is the expensive mistake. A Turnitin or iThenticate style report contains <strong>several different measurements layered in one document</strong>, and only some of them are about AI writing at all. Read the fields first, then rewrite the flagged spans — <a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen imports the report and rewrites only the passages that were flagged</a>, keeping the original layout, citations and meaning.</p>
+
+<div class="box"><strong>The one-sentence version:</strong> similarity % answers "does this text overlap other text", the AI writing indicator answers "does this prose look machine-generated", the highlighted segments tell you <em>where</em>, and the confidence band tells you <em>how sure the vendor is</em>. Rewrite where the signal is strong, re-check with the same report type, and stop when the flagged spans clear.</div>
+
+<h2>1. The five fields that actually matter</h2>
+<table>
+<tr><th>Field</th><th>What it measures</th><th>How to read it</th></tr>
+<tr><td><strong>Similarity index</strong></td><td>Textual overlap with the vendor's corpus (journals, web, prior submissions)</td><td>A high value is a citation and quoting problem, not an authorship problem. Fix with attribution and paraphrase — never by hiding sources.</td></tr>
+<tr><td><strong>AI writing indicator</strong></td><td>Estimated share of prose the vendor's model classifies as machine-generated</td><td>Read it together with the coverage note. A percentage without coverage is ambiguous: 40% of a body chapter and 40% of a full thesis are not the same claim.</td></tr>
+<tr><td><strong>Segment highlighting</strong></td><td>The specific sentences the model attributed to AI</td><td>This is your work order. It is usually 5–15% of the prose, not the whole document.</td></tr>
+<tr><td><strong>Confidence band</strong></td><td>The vendor's own uncertainty, often drawn as a pale or secondary colour</td><td>Pale highlights mean "possible, not certain". Treat them as queue position two, not as a verdict.</td></tr>
+<tr><td><strong>Coverage / exclusions</strong></td><td>Which parts of the file were analysed (references, quotes, tables, appendices are often excluded)</td><td>Explains most disagreements between the portal badge and the downloaded PDF. Compare coverage before comparing numbers.</td></tr>
+</table>
+
+<h2>2. Similarity and AI writing are two different reports sharing one page</h2>
+<p>A similarity match and an AI flag can point at the same sentence for opposite reasons. Quoted material raises similarity and usually lowers the AI indicator, because vendors exclude quotations. A clean, generic paragraph can pass similarity at 2% and still be the highest-scoring AI segment on the page. If you treat the two numbers as one score you will rewrite the wrong paragraphs — which is why <strong>two scores need two readings</strong> before any edit begins.</p>
+
+<h2>3. What a rewrite can change, and what it cannot</h2>
+<h3>It can change</h3>
+<ul>
+<li><strong>Sentence-level signal.</strong> Uniform rhythm, evenly weighted clauses and generic transitions are what models score. Rewriting a flagged span into your own cadence, with the specific detail your draft actually contains, changes the object being measured.</li>
+<li><strong>Targeting.</strong> A report-driven rewrite touches only the flagged spans, so clean prose keeps the voice your supervisor already approved — and you are billed for the words actually rewritten, not the whole file.</li>
+<li><strong>Format integrity.</strong> When the tool edits the DOCX or PPTX itself, tables, footnotes, captions, page breaks and slide text boxes come back where they were.</li>
+</ul>
+<h3>It cannot change</h3>
+<ul>
+<li><strong>Authorship.</strong> No tool proves you wrote the text. Detection is an estimate; the evidence chain — drafts, version history, notes, supervision records — is what a committee actually weighs.</li>
+<li><strong>Next release behaviour.</strong> Vendor models are retrained. A report that clears today can move after an update, which is why the habit below is a loop and not a one-off.</li>
+<li><strong>Your institution's threshold.</strong> The policy number lives in your handbook, not in the report badge.</li>
+</ul>
+
+<h2>4. The loop: import, rewrite flagged only, re-check with the same report</h2>
+<ol>
+<li><strong>Export the report you were given</strong> (PDF or the vendor's own export) and keep it as the baseline. Same vendor, same report type, same settings — otherwise the next number is not comparable.</li>
+<li><strong>Import it</strong> so the flagged spans become the target list. Do not "improve" unflagged prose in the same pass; you lose the ability to attribute the change.</li>
+<li><strong>Rewrite only the flagged passages</strong>, keeping numbers, units, formulas, citations, terminology and the strength of each claim exactly as they were.</li>
+<li><strong>Download the editable file</strong> and check the details a reader would notice: table widths, footnote numbering, figure captions, page breaks, speaker notes.</li>
+<li><strong>Re-submit and compare</strong> the same field against the baseline. If some spans cleared and one or two did not, the second pass is small and targeted.</li>
+<li><strong>Stop when the flagged segments are gone</strong> or when your supervisor/policy says the document is acceptable. Registering gives you 100 free credits, and credits never expire, so you can run the loop and test it before buying anything.</li>
+</ol>
+
+<h2>5. Format preservation is not cosmetic</h2>
+<p>Pasting a chapter into a web box and pasting it back is where most students lose a night: headings collapse, tables reflow, footnote numbers restart, superscripts disappear. A long thesis with no word limit only stays usable if the file comes back as a file. On the PowerPoint side the same logic applies at slide level: a native PPTX rewrite edits each slide's text in place, so layout, charts, masters and speaker notes stay put and the deck remains editable. If your defence deck and your thesis both need work, treat them as one document family and check both exports before you submit either.</p>
+
+<p>Language coverage belongs to the same bet. The rewrite engine works across <strong>35 languages</strong> (thirty-plus is the conservative way to say it), so a Vietnamese, Indonesian, Spanish or Chinese draft is rewritten in its own syntax instead of being translated into English first and translated back — which is where most of the meaning drift in student work actually comes from.</p>
+
+<h2>6. Honest limits worth writing down</h2>
+<p>We do not promise a passing score or "undetectable" text, and we do not introduce deliberate typos or grammar errors to fool a classifier — that damages the writing and does not survive a careful reader. What the workflow offers is narrower and more useful: a defensible, repeatable procedure, a rewrite that only touches what was flagged, and an output file whose formatting a supervisor will accept.</p>
+
+<h2>7. Pre-submission checklist</h2>
+<ul>
+<li>Baseline report saved, with vendor, report type and date noted.</li>
+<li>Coverage read: do references, quotes, tables or appendices sit outside the score?</li>
+<li>Flagged segments listed before any editing starts.</li>
+<li>Low-confidence bands marked as "check again", not "guilty".</li>
+<li>Rewrites limited to flagged spans; numbers, formulas and citations frozen.</li>
+<li>DOCX/PPTX re-opened and inspected, not just downloaded.</li>
+<li>Second report compared field by field with the first.</li>
+<li>Policy threshold checked in the handbook, not inferred from the badge.</li>
+</ul>
+
+<h2>8. FAQ</h2>
+<h3>Does the AI writing percentage cover the whole document?</h3>
+<p>Not necessarily. Vendors compute it over the prose they can analyse and may exclude reference lists, quotations, tables and short fragments. Read the coverage note before you treat the badge as a mark for the whole file.</p>
+<h3>What is the difference between similarity % and the AI writing indicator?</h3>
+<p>Similarity reports overlap with a corpus. The AI writing indicator estimates whether prose looks machine-generated. Different questions, different models, sometimes opposite verdicts on the same sentence.</p>
+<h3>Should I rewrite lightly highlighted passages?</h3>
+<p>Start with the strongest signal. Rewriting everything at once hides which change actually moved the report.</p>
+<h3>Will my Word or PowerPoint layout survive?</h3>
+<p>Only if the tool edits the file instead of asking you to paste text. A document-level rewrite returns the same DOCX or PPTX with styling, tables, footnotes and slide boxes intact.</p>
+<h3>Can any tool guarantee a clean report?</h3>
+<p>No. Detection is probabilistic, models are retrained, and your institution sets its own threshold. What you can control is a targeted, repeatable process — and an output file that still looks like your document.</p>
+
+<p class="muted">Related notes: <a href="cross-detector-report-one-pass.html">one pass for similarity and AI highlights</a> · <a href="tables-appendices-ai-badge-slice.html">tables and appendices as a slice of the badge</a> · <a href="confidence-band-pale-highlight-zh.html">low-confidence bands (中文)</a> · <a href="portal-vs-pdf-ai-coverage-zh.html">portal badge vs downloaded PDF (中文)</a></p>
+
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>
