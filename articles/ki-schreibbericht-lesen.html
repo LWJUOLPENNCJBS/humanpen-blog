@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Einen KI-Schreibbericht richtig lesen: Prozent, Abdeckung, Sternchen, Version — HumanPen</title>
+<meta name="description" content="Was der KI-Prozentsatz in einem Turnitin- oder iThenticate-Bericht tatsächlich misst: den Anteil des qualifizierenden Fließtextes, der markiert wurde. Warum Werte unter 20 % ein Sternchen tragen, was die 300-Wort-Regel und die Fließtext-Regel ausschließen und warum zwei Berichte aus verschiedenen Detektorversionen nicht vergleichbar sind.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/ki-schreibbericht-lesen.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem;line-height:1.35}h2{font-size:1.2rem;margin-top:1.7rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Ist der Prozentsatz die Wahrscheinlichkeit, dass eine KI den Text geschrieben hat?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Der Wert beschreibt den Anteil des qualifizierenden Fließtextes, den das Modell markiert hat. Er ist keine Aussage über die Urheberschaft und keine personenbezogene Bewertung."}}, {"@type": "Question", "name": "Warum steht bei 0 % manchmal ein Sternchen?", "acceptedAnswer": {"@type": "Answer", "text": "Das Sternchen markiert den unteren Vertrauensbereich des Detektors, üblicherweise unter 20 %. Dort ist der Wert unscharf, deshalb wird er nicht als präzise Messung behandelt."}}, {"@type": "Question", "name": "Sind zwei Berichte aus verschiedenen Monaten vergleichbar?", "acceptedAnswer": {"@type": "Answer", "text": "Nur eingeschränkt. Wird die Detektorversion geändert, kann derselbe Text einen anderen Wert erhalten. Für einen belastbaren Vergleich müssen Version, Datum und Wortzahl übereinstimmen."}}, {"@type": "Question", "name": "Werden Tabellen und Quellenverzeichnis mitgezählt?", "acceptedAnswer": {"@type": "Answer", "text": "In der Regel nicht. Analysiert wird fortlaufender Fließtext. Tabellen, Überschriften, Bildunterschriften und Literaturverzeichnis fallen meist aus der Bewertungsmenge heraus."}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Start</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Einen KI-Schreibbericht lesen: Prozent, Abdeckung, Sternchen, Version</h1>
+<p class="muted">Charles Li / HumanPen · Leitfaden · 8. November 2026</p>
+
+<p>Die meisten Diskussionen über einen KI-Schreibbericht beginnen mit einer Zahl und enden damit, dass
+zwei Personen sich darüber streiten, was diese Zahl bedeutet. Dieser Leitfaden trennt die vier Dinge,
+die dabei regelmäßig zu einem einzigen Wert verschmelzen — <strong>Prozentsatz</strong>,
+<strong>Abdeckung</strong>, <strong>Vertrauen</strong> und <strong>Detektorversion</strong> —, damit
+man einen Bericht so genau beschreiben kann, dass sich daraus eine Handlung ergibt.</p>
+
+<div class="box"><strong>In einem Satz:</strong> Der Prozentsatz ist der Anteil des <em>qualifizierenden
+Textes</em>, den der Detektor markiert hat — nicht die Wahrscheinlichkeit, dass ein Mensch oder ein
+Modell den Text geschrieben hat. Und der Nenner ist kleiner als das Dokument.</div>
+
+<h2>1. Der Prozentsatz hat einen Nenner, den man nicht selbst wählt</h2>
+<p>Ein Bericht teilt nicht markierte Wörter durch alle Wörter, die man geschrieben hat, sondern durch
+die Wörter, die der Detektor als bewertbar eingestuft hat. Zwei Regeln verkleinern diesen Nenner
+typischerweise:</p>
+<ul>
+<li><strong>Mindestlänge.</strong> Berichte dieser Familie entstehen erst oberhalb einer Wortgrenze —
+häufig genannt werden 300 Wörter. Darunter erscheint gar kein Indikator. Fehlender Indikator ist
+nicht dasselbe wie ein sauberes Ergebnis.</li>
+<li><strong>Nur fortlaufender Fließtext.</strong> Listen, Tabellen, Überschriften, Bildunterschriften,
+Formeln und Literaturverzeichnis liegen meist außerhalb der analysierten Menge. Eine Arbeit, die zur
+Hälfte aus Tabellen besteht, kann einen hohen Prozentsatz aus einem kleinen Fließtext-Ausschnitt tragen.</li>
+</ul>
+<p>Die erste Frage an einen Bericht lautet deshalb nicht „wie hoch ist der Wert“, sondern „worüber
+wurde dieser Wert berechnet“. 34 % über 6.000 bewertbare Wörter und 34 % über 700 bewertbare Wörter
+beschreiben sehr unterschiedliche Textmengen.</p>
+
+<h2>2. Der Prozentsatz ist ein Flächenmaß, kein Urteil</h2>
+<p>Der Wert beschreibt, wie viel des bewertbaren Fließtextes hervorgehoben wurde. Er sagt nicht, welche
+Sätze betroffen sind, wie sicher das Modell pro Satz war, oder ob die markierten Stellen eine gemeinsame
+Ursache haben. Drei Muster erzeugen denselben Wert und verlangen unterschiedliche Reaktionen:</p>
+<table>
+<tr><th>Muster im Bericht</th><th>Bedeutung in der Regel</th><th>Erste Prüfung</th></tr>
+<tr><td>Viele kurze, verstreute Stellen</td><td>Satzebene-Merkmale schlagen wiederholt an</td><td>Teilen die Sätze eine Vorlage oder einen Übersetzungspfad?</td></tr>
+<tr><td>Ein oder zwei lange zusammenhängende Blöcke</td><td>Ein Abschnitt wurde in einem Zug eingefügt oder formuliert</td><td>Welcher Abschnitt, und gibt es eine frühere Fassung?</td></tr>
+<tr><td>Ganzes Dokument gleichmäßig</td><td>Detektor passt nicht zum Register, oder Zweitsprach-Stil</td><td>Erhielt dieselbe Textstelle in einer älteren Fassung einen anderen Wert?</td></tr>
+</table>
+<p>Deshalb sind „der Wert ist gestiegen“ und „mehr meiner Formulierungen wurden markiert“ keine
+austauschbaren Aussagen.</p>
+
+<h2>3. Das Sternchen ist ein Vertrauenssignal, kein Rundungstrick</h2>
+<p>Berichte dieser Familie zeigen ein Sternchen neben Ergebnissen im unteren Bereich — üblich sind
+20 % als Grenze —, und ein Wert von null kann in diesem Bereich als Sternchen-Null statt als schlichte
+0 % erscheinen. Das Sternchen markiert das Band, in dem die Sicherheit des Modells am schwächsten ist;
+die veröffentlichte Empfehlung lautet, dieses Band nicht als präzise Messung zu behandeln.</p>
+<p>Praktische Folge: <em>Ein Wert mit Sternchen ist kein niedrigerer Wert, sondern ein weniger
+verlässlicher.</em> Wer „18 %*“ mit „22 %“ vergleicht, vergleicht nicht ein besseres mit einem
+schlechteren Ergebnis, sondern ein unscharfes Band mit dem ersten Band, das die Oberfläche klar
+auszusprechen bereit ist.</p>
+
+<h2>4. Ein Bericht ist eine Momentaufnahme einer Detektorversion</h2>
+<p>Detektormodelle werden aktualisiert. Wird das Modell geändert, kann sich derselbe Text verschieben.
+Ein Bericht hängt deshalb an der Version, die ihn erzeugt hat, und zwei Berichte aus verschiedenen
+Versionen sind kein kontrollierter Vergleich, sondern zwei verschiedene Instrumente an derselben Seite.
+Vor jeder Interpretation also Version und Erstellungsdatum prüfen, die auf dem Bericht stehen.</p>
+<p>Das erklärt auch die wiederkehrende Beobachtung, dass der Wert nach einer reinen Grammatikkorrektur
+steigt: Das Instrument hat sich geändert, nicht zwingend der Text.</p>
+
+<h2>5. Ähnlichkeit und KI-Schreiben sind zwei Instrumente</h2>
+<p>Der Ähnlichkeitsindex beantwortet die Frage, wie viel des Textes mit Quellen aus einer Datenbank
+übereinstimmt. Der KI-Indikator beantwortet die Frage, wie viel des bewertbaren Fließtextes dem
+Modell des Detektors für maschinellen Text entsprach. Beide haben unterschiedliche Nenner,
+unterschiedliche Fehlerarten und unterschiedliche Gegenmaßnahmen. Hohe Ähnlichkeit bei sauberem
+KI-Indikator ist ein Zitierproblem; niedrige Ähnlichkeit bei hohem KI-Indikator ist überhaupt kein
+Plagiatsproblem. Wer beides als eine Zahl behandelt, schreibt Text um, der aus dem vermuteten Grund
+nie markiert war.</p>
+
+<h2>6. Was der Bericht strukturell nicht sagen kann</h2>
+<ul>
+<li><strong>Wer geschrieben hat.</strong> Das Ergebnis ist ein Ähnlichkeitsmaß zu einem Modell, keine
+Urheberschaftszuschreibung und keine Bewertung einer Person.</li>
+<li><strong>Dass unmarkierter Text menschlich ist.</strong> Fehlende Markierung ist fehlender Beleg;
+Mindestlänge und Fließtext-Regel nehmen Text komplett aus der Betrachtung.</li>
+<li><strong>Dass eine Überarbeitung den nächsten Wert senkt.</strong> Nichts im Bericht garantiert den
+Wert des nächsten Berichts, weil dieser von einem möglicherweise anderen Modell über eine möglicherweise
+andere bewertbare Menge erzeugt wird.</li>
+<li><strong>Dass die Markierung fair ist.</strong> Erhöhte Falsch-Positiv-Raten bei Personen, die
+Englisch als Zweitsprache schreiben, sind vom Anbieter selbst dokumentiert.</li>
+</ul>
+
+<h2>7. Ein Leseverfahren in fünf Minuten</h2>
+<ol>
+<li><strong>Version und Datum</strong> auf dem Bericht notieren, dazu die <strong>Wortzahl</strong> der
+eingereichten Datei.</li>
+<li><strong>Bewertbare Wortzahl</strong> übernehmen, falls der Bericht sie ausweist; sonst Tabellen,
+Abbildungen, Bildunterschriften und Literaturverzeichnis abziehen.</li>
+<li><strong>Prozentwert und Sternchen</strong> als Text in die eigenen Notizen schreiben, nicht als
+zugeschnittenen Screenshot — ein Zuschnitt verliert die Kennung des Durchlaufs und damit den Beleg.</li>
+<li>Das Muster der Markierung nach der Tabelle in §2 einordnen.</li>
+<li>Erst dann den Umfang festlegen: welche Abschnitte überarbeitet werden und welche unangetastet
+bleiben, weil sie nie in der bewerteten Menge lagen.</li>
+</ol>
+
+<h2>8. Wo HumanPen ins Spiel kommt</h2>
+<p><a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen</a>
+arbeitet auf der Ebene, auf der dieser Leitfaden beharrt: <strong>dem Absatz</strong>. Man markiert die
+Absätze, die ein Bericht tatsächlich gekennzeichnet hat, und nur diese werden umgeschrieben; der Rest
+der Datei bleibt, wie er war. Das Original-Layout bleibt erhalten — native <code>.docx</code> und
+<code>.pptx</code>, sodass Tabellen, Überschriften, Fußnoten und das Literaturverzeichnis den Weg
+hin und zurück überstehen und die Datei weiter bearbeitbar bleibt. Es funktioniert in 35 Sprachen, was
+zählt, wenn der markierte Text Englisch als Zweitsprache ist. Die Registrierung bringt 100 kostenlose
+Credits, die nicht verfallen.</p>
+
+<h2>9. Was danach zu tun ist</h2>
+<p>Wenn der Bericht in ein Gespräch mit der Betreuung führt, ist der <a href="sprechstunde-ai-bericht.html">Gesprächsleitfaden zur Sprechstunde</a> die passende Fortsetzung: dort geht es um Prozessbelege und präzise Fragen, nicht um die Metriken dieses Textes.</p>
+<p>Der Arbeitsablauf, der aus diesem Leitfaden folgt, ist bewusst eng: Bericht importieren, markierte
+Absätze umschreiben, den <em>neuen</em> Bericht importieren und Gleiches mit Gleichem vergleichen —
+gleiche Version, gleiche Wortzahl, gleiche bewertbare Menge. Bewegt sich der Wert, liegt eine
+kontrollierte Beobachtung vor. Hat sich die Version geändert, liegt sie nicht vor.</p>
+<p>Wer zusätzlich den Umfang klein hält, zahlt nur für tatsächlich umgeschriebene Wörter statt für die
+Dateigröße — und lässt die Absätze in Ruhe, die die Betreuung bereits freigegeben hat.</p>
+
+<footer>
+<p class="muted">HumanPen · Leitfaden zur Interpretation von Detektorberichten. Dieser Text erklärt,
+wie ein Bericht zu lesen ist. Er verspricht kein bestimmtes Ergebnis in einem künftigen Bericht und
+ist keine Anleitung zur Umgehung von Erkennung.</p>
+<p class="muted"><a href="../">Start</a> · <a href="https://lnk.bio/humanpen">lnk.bio</a></p>
+</footer>
+</body>
+</html>
