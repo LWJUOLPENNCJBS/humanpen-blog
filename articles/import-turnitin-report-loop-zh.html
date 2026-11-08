@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>如何导入 Turnitin 报告，只改被标记的段落 — HumanPen</title>
+<meta name="description" content="从导出报告、导入、只改被标段落，到用同一类报告复查：一套可复核的改写流程，DOCX 与 PPTX 原格式保留。不承诺分数。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/import-turnitin-report-loop-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "要上传整份报告，还是只截高亮部分？", "acceptedAnswer": {"@type": "Answer", "text": "上传你拿到的报告原件。工具需要被标段落在原文里的上下文才能只改这些段落；截图会丢掉这层信息。"}}, {"@type": "Question", "name": "第二份报告标了别的句子怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "这很正常，厂商会重采样、重训练。按字段和基线逐项对比，然后只对仍被标记的部分做第二次精准改写，不要整章重来。"}}, {"@type": "Question", "name": "PDF 报告能用吗？", "acceptedAnswer": {"@type": "Answer", "text": "能。PDF 报告与 DOCX 报告走同一套导入流程，关键是被标段落可读，而不是文件容器格式。"}}, {"@type": "Question", "name": "表格和参考文献会变吗？", "acceptedAnswer": {"@type": "Answer", "text": "不应该变。数字、单位、公式、引用与术语原样保留，导出的文件保留原样式。"}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>导入报告 → 只改被标段落 → 用同一份报告复查</h1>
+<p class="muted">Charles Li / HumanPen · 流程 · 2026-11-08</p>
+
+<p>看到 AI 百分比高了就把整章重写，是最贵也最不准确的做法。正确顺序反过来：<strong>让报告决定改写范围</strong>。把报告导入，只改它标记出来的段落，导出可编辑文件，再用同一类报告复查一次。<a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen 会读 Turnitin 或 iThenticate 报告，只重写被标记的段落</a>，版式、引用与原意留在原位。</p>
+<div class="box"><strong>为什么范围是关键：</strong>计费按「实际改写的词数」，不按文件大小。一章 12,000 词里只有 900 词被标记，改这 900 词的成本远低于整篇重写，而且导师已经认可的那部分文字一个字都不用动。</div>
+<h2>第一步：留一份能对比的基线</h2>
+<p>把拿到的报告（PDF 或系统导出的原件）下载下来，不要覆盖。在文件名上写清三件事：检测系统、报告类型、生成日期。少了这三项，下一个数字没有可比性——相似度与 AI 写作指标是两套不同的模型，阈值和设置不同，报告数字会在你一个字都没改的情况下变化。</p>
+<h2>第二步：导入，不要手抄</h2>
+<p>导入动作的价值在于把报告变成「改写清单」。手抄段落会丢掉「哪句被标记」与「哪句我改过」之间的对应关系，改完你也说不清究竟是哪一处改动影响了报告。</p>
+<h2>第三步：只改被标段落，其余全部冻结</h2>
+<table>
+<tr><th>元素</th><th>处理方式</th></tr>
+<tr><td>被标记的正文</td><td>改成你自己的语序与节奏，补上被标段落真正缺的那句具体信息</td></tr>
+<tr><td>数字、单位、公式</td><td>原样保留</td></tr>
+<tr><td>引用与参考文献</td><td>原样保留</td></tr>
+<tr><td>术语与论断强度</td><td>原样保留——「可能」不会变成「证明」</td></tr>
+<tr><td>未被标记的正文</td><td>不动；它不是问题所在</td></tr>
+</table>
+<h2>第四步：导出后检查文件，不只是看文字</h2>
+<p>把回来的 DOCX 或 PPTX 真正打开，看读者会注意的地方：表格列宽、脚注编号、图表题注、分页符、幻灯片文本框与备注。只给你一段纯文本的工具，会让你花一整晚重新排版；文档级改写是「可编辑文件进、可编辑文件出」，原样式不动。</p>
+<h2>第五步：复查时对齐同一个字段</h2>
+<p>重新提交，并且拿同类报告、同一个字段对比。如果一部分段落清了、还剩两句，那第二轮就是小范围精准处理。循环到报告不再标记你在处理的那一段，或者到学院规定认为可交为止。</p>
+<h2>第六步：把过程留痕</h2>
+<p>基线报告、改写后的文件、第二份报告，三个一起留着。导师问「这段怎么改的」，有日期的三份文件十秒钟就能回答；只有一个最终版，什么都答不了。</p>
+<h2>四个常见错误</h2>
+<ul>
+<li><strong>正文被标，却去改摘要。</strong>改被标的地方，徽章不是对整份文件的判决。</li>
+<li><strong>把淡色高亮当证据。</strong>低置信色带是检测方在说「我不确定」，排在队列第二位。</li>
+<li><strong>拿门户徽章和另一次导出的 PDF 对比。</strong>先看覆盖范围说明，再比数字。</li>
+<li><strong>故意插错字。</strong>毁掉的是写作本身，认真读的人一眼看穿；我们不做这件事。</li>
+</ul>
+<p>注册送 100 免费额度、额度不过期，你可以先拿真实的一章把整个循环跑一遍，再决定要不要付费。没有任何工具能承诺一份干净的报告——检测是概率判断，厂商会重新训练模型，阈值由学校定。你能控制的是范围、可追溯性，以及一份交出去仍然像你写的文件。</p>
+
+<div class="box"><strong>HumanPen 能做什么，四句话说清：</strong><ul>
+<li>导入 Turnitin 或 iThenticate 报告，只重写被标记的段落，再用同一类报告复查。</li>
+<li>改写引擎覆盖 35 种语言——在原文语言里改写，不走「译成英文再译回来」。</li>
+<li>原生 PPTX：每页文字原位改写，版式与演讲者备注不动。</li>
+<li>注册送 100 免费额度、额度不过期 · 无字数上限 · 原样式不动 · 可编辑文件进、可编辑文件出。</li></ul></div>
+<h2>FAQ</h2>
+<h3>要上传整份报告，还是只截高亮部分？</h3>
+<p>上传你拿到的报告原件。工具需要被标段落在原文里的上下文才能只改这些段落；截图会丢掉这层信息。</p>
+<h3>第二份报告标了别的句子怎么办？</h3>
+<p>这很正常，厂商会重采样、重训练。按字段和基线逐项对比，然后只对仍被标记的部分做第二次精准改写，不要整章重来。</p>
+<h3>PDF 报告能用吗？</h3>
+<p>能。PDF 报告与 DOCX 报告走同一套导入流程，关键是被标段落可读，而不是文件容器格式。</p>
+<h3>表格和参考文献会变吗？</h3>
+<p>不应该变。数字、单位、公式、引用与术语原样保留，导出的文件保留原样式。</p>
+<p class="muted">相关：<a href="ai-detection-report-field-guide.html">报告字段指南</a> · <a href="import-turnitin-report-loop-zh.html">报告驱动闭环</a> · <a href="native-pptx-rewrite-in-place-zh.html">原生 PPTX</a> · <a href="long-documents-format-intact-zh.html">长文档</a> · <a href="rewrite-in-35-languages-zh.html">35 种语言</a> · <a href="test-with-100-free-credits-zh.html">免费额度</a> · <a href="numbers-citations-stay-frozen-zh.html">事实冻结</a> · <a href="../">目录</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rewriting in 35 languages: why source-language rewrites beat translate-and-back — HumanPen</title>
+<meta name="description" content="The rewrite engine works in 35 languages, so a Vietnamese or Indonesian draft is rewritten in its own syntax instead of being translated to English and back. What that preserves, and what it does not.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/rewrite-in-35-languages.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does 35 languages mean translation?", "acceptedAnswer": {"@type": "Answer", "text": "No. The rewrite engine supports 35 languages; translation is a separate tool with 12 languages; citation-format correction is language-agnostic."}}, {"@type": "Question", "name": "Will my Chinese punctuation change?", "acceptedAnswer": {"@type": "Answer", "text": "A source-language rewrite keeps CJK punctuation and spacing conventions. Check the export anyway, since punctuation is where automated edits most often drift."}}, {"@type": "Question", "name": "Can I mix languages in one file?", "acceptedAnswer": {"@type": "Answer", "text": "Files are processed as documents; mixed-language files behave best when a passage is consistently in one language."}}, {"@type": "Question", "name": "Does language coverage change detection?", "acceptedAnswer": {"@type": "Answer", "text": "Vendors train unevenly across languages, so behaviour varies by language. We do not promise a result in any language."}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>35 languages: rewrite in the source language, not through English</h1>
+<p class="muted">Charles Li / HumanPen · languages · 8 Nov 2026</p>
+
+<p>Translate-and-back is the most common way a careful draft loses its meaning. A Bahasa Indonesia paragraph goes to English, gets "improved", and comes home carrying English word order in Indonesian words. <a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen's rewrite engine works across 35 languages</a>, so the paragraph is rewritten inside its own grammar, register and connectors.</p>
+<div class="box"><strong>Thirty-plus, precisely:</strong> the rewrite engine supports <strong>35 languages</strong>. Translation is a separate tool covering 12 languages, and citation-format correction (Vancouver, APA 7, IEEE, Chicago, GB/T 7714) is language-agnostic. Keep the three numbers apart when you describe the product.</div>
+<h2>What survives a source-language rewrite</h2>
+<ul>
+<li><strong>Register.</strong> Academic Indonesian and academic Vietnamese use formality markers English does not have; rewriting in-language keeps them.</li>
+<li><strong>Connectors.</strong> "Namun", "tuy nhiên", "sin embargo" carry argument structure. Translation flattens them into "however" and back into something else.</li>
+<li><strong>Terminology.</strong> Field terms stay as your field uses them, not as a translation model guesses.</li>
+<li><strong>Numbers, units, formulas.</strong> Frozen exactly, in every language.</li>
+</ul>
+<h2>Where students actually get caught</h2>
+<p>The tell is a paragraph that is grammatically fine but logically foreign: sentences in the right language, argument in the wrong order. Supervisors notice this faster than they notice a detector score. It usually comes from a two-hop pipeline, not from the writer.</p>
+<h2>A workable order for a non-English thesis</h2>
+<ol>
+<li>Write in your own language and finish the argument first.</li>
+<li>If a report covers the file, import it and rewrite only the flagged spans — in the same language.</li>
+<li>Export and read one rewritten paragraph aloud; if the rhythm is not yours, the rewrite over-corrected.</li>
+<li>Only then consider translation, and treat the translated file as a new document that needs its own check.</li>
+</ol>
+<h2>Right-to-left and CJK specifics</h2>
+<p>Chinese, Japanese and Korean drafts keep their punctuation conventions and their spacing rules in a source-language rewrite; right-to-left scripts keep direction and numeral shaping. This is a formatting layer, not a translation layer — and it is the layer that most often breaks when a tool assumes English input.</p>
+<h2>Honest limits</h2>
+<p>Language coverage does not make a report predictable. Detection models are trained unevenly across languages, so a passage can read very differently to a vendor depending on which language it is in. No tool can promise a result in any language, and we do not. What language coverage buys you is a rewrite that a native reader — your supervisor — will accept as your own writing.</p>
+
+<div class="box"><strong>What HumanPen does, in four lines:</strong><ul>
+<li>Import a Turnitin or iThenticate report and rewrite only the flagged passages, then re-check with the same report type.</li>
+<li>35 languages in the rewrite engine — source-language rewrites, not translate-and-back.</li>
+<li>Native PPTX: each slide's text rewritten in place, layout and notes intact.</li>
+<li>100 free credits on signup, credits never expire · no word limit · original styling untouched · editable files in, editable files out.</li></ul></div>
+<h2>FAQ</h2>
+<h3>Does 35 languages mean translation?</h3>
+<p>No. The rewrite engine supports 35 languages; translation is a separate tool with 12 languages; citation-format correction is language-agnostic.</p>
+<h3>Will my Chinese punctuation change?</h3>
+<p>A source-language rewrite keeps CJK punctuation and spacing conventions. Check the export anyway, since punctuation is where automated edits most often drift.</p>
+<h3>Can I mix languages in one file?</h3>
+<p>Files are processed as documents; mixed-language files behave best when a passage is consistently in one language.</p>
+<h3>Does language coverage change detection?</h3>
+<p>Vendors train unevenly across languages, so behaviour varies by language. We do not promise a result in any language.</p>
+<p class="muted">Related: <a href="ai-detection-report-field-guide.html">report field guide</a> · <a href="import-turnitin-report-loop.html">report-driven loop</a> · <a href="native-pptx-rewrite-in-place.html">native PPTX</a> · <a href="long-documents-format-intact.html">long documents</a> · <a href="rewrite-in-35-languages.html">35 languages</a> · <a href="test-with-100-free-credits.html">free credits</a> · <a href="numbers-citations-stay-frozen.html">frozen facts</a> · <a href="../">index</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>

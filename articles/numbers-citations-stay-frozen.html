@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Numbers, formulas and citations stay frozen: the rule that keeps a rewrite defensible — HumanPen</title>
+<meta name="description" content="Rewriting should change phrasing, never substance. How to check that percentages, units, formulas, citations, terminology and claim strength survived a rewrite unchanged.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/numbers-citations-stay-frozen.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Will the rewrite change my percentages?", "acceptedAnswer": {"@type": "Answer", "text": "It should not. Numbers, units, formulas and citations are kept exactly as they were; if a digit changed, that is a defect, not a feature."}}, {"@type": "Question", "name": "Can it convert my citations to another style?", "acceptedAnswer": {"@type": "Answer", "text": "Citation Fix supports Vancouver, APA 7, IEEE, Chicago and GB/T 7714, and runs as a separate step — it changes format, not who you cited."}}, {"@type": "Question", "name": "Does it weaken or strengthen my claims?", "acceptedAnswer": {"@type": "Answer", "text": "Neither. Claim strength is frozen: a hedge stays a hedge, and an assertion stays an assertion."}}, {"@type": "Question", "name": "What if my field has very specific terminology?", "acceptedAnswer": {"@type": "Answer", "text": "Terminology is preserved. Check the export anyway, and treat any drift in a technical term as a defect to report."}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Freeze the facts: numbers, formulas, citations and claim strength stay as they were</h1>
+<p class="muted">Charles Li / HumanPen · integrity · 8 Nov 2026</p>
+
+<p>A rewrite that quietly turns "a 34% reduction" into "a significant reduction" has destroyed the sentence's value. <a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen keeps numbers, units, formulas, citations, terminology and the strength of each claim exactly as they were</a> while the prose around them is rewritten — and this is the one rule that makes the whole workflow defensible in front of a committee.</p>
+<div class="box"><strong>The test:</strong> take the rewritten paragraph, cover everything except the digits, symbols and in-text citations. That layer should be byte-identical to the original. If it is not, the tool overstepped.</div>
+<h2>What "frozen" covers</h2>
+<table>
+<tr><th>Layer</th><th>Example</th><th>Must stay</th></tr>
+<tr><td>Numbers and units</td><td>34%, 12.5 mg/kg, 3.2 s</td><td>Identical digits and units</td></tr>
+<tr><td>Formulas</td><td>Yield = (actual / theoretical) × 100</td><td>Identical expression, same notation</td></tr>
+<tr><td>In-text citations</td><td>(Chen et al., 2024)</td><td>Identical author, year, punctuation</td></tr>
+<tr><td>Reference list</td><td>Vancouver / APA 7 / IEEE / GB/T 7714</td><td>Same order, same style</td></tr>
+<tr><td>Terminology</td><td>"hypothesis", not "guess"</td><td>Field term preserved</td></tr>
+<tr><td>Claim strength</td><td>"may indicate"</td><td>Never upgraded to "proves"</td></tr>
+</table>
+<h2>Why claim strength is the sneaky one</h2>
+<p>Hedging is scientific content, not style. "The data suggest" and "the data show" are different claims, and a rewrite that "tightens" the sentence has changed what you assert. Examiners read for exactly this. When a tool refuses to touch hedges, that is a feature, not timidity.</p>
+<h2>How to verify in two minutes</h2>
+<ol>
+<li><strong>Search the digits.</strong> Use Find for each number in the rewritten section; every hit should match the original.</li>
+<li><strong>Find the citations.</strong> The count of in-text citations should be unchanged; no citation should have moved to a different sentence.</li>
+<li><strong>Check the hedging words.</strong> Scan for may, might, suggests, indicates, appears — the count should not drop.</li>
+<li><strong>Check the units.</strong> Especially where a rewrite could reformat "mg/kg" into "mg per kg".</li>
+<li><strong>Check term consistency.</strong> One concept, one term, throughout the chapter.</li>
+</ol>
+<h2>Why we will not teach the alternative</h2>
+<p>There is a genre of advice that recommends inserting deliberate typos or grammar errors so a classifier scores lower. It damages the writing, it does not survive a careful reader, and it is not something we will put in a guide. The same goes for "undetectable" wording: no tool can certify authorship, and detection is a probabilistic estimate that vendors retrain whenever they like.</p>
+<p>If a report covers your file, import it and rewrite only the flagged spans under this rule; then re-check with the same report type and compare the same field. Registering gives you 100 free credits that never expire, so the verification habit costs you nothing to start.</p>
+
+<div class="box"><strong>What HumanPen does, in four lines:</strong><ul>
+<li>Import a Turnitin or iThenticate report and rewrite only the flagged passages, then re-check with the same report type.</li>
+<li>35 languages in the rewrite engine — source-language rewrites, not translate-and-back.</li>
+<li>Native PPTX: each slide's text rewritten in place, layout and notes intact.</li>
+<li>100 free credits on signup, credits never expire · no word limit · original styling untouched · editable files in, editable files out.</li></ul></div>
+<h2>FAQ</h2>
+<h3>Will the rewrite change my percentages?</h3>
+<p>It should not. Numbers, units, formulas and citations are kept exactly as they were; if a digit changed, that is a defect, not a feature.</p>
+<h3>Can it convert my citations to another style?</h3>
+<p>Citation Fix supports Vancouver, APA 7, IEEE, Chicago and GB/T 7714, and runs as a separate step — it changes format, not who you cited.</p>
+<h3>Does it weaken or strengthen my claims?</h3>
+<p>Neither. Claim strength is frozen: a hedge stays a hedge, and an assertion stays an assertion.</p>
+<h3>What if my field has very specific terminology?</h3>
+<p>Terminology is preserved. Check the export anyway, and treat any drift in a technical term as a defect to report.</p>
+<p class="muted">Related: <a href="ai-detection-report-field-guide.html">report field guide</a> · <a href="import-turnitin-report-loop.html">report-driven loop</a> · <a href="native-pptx-rewrite-in-place.html">native PPTX</a> · <a href="long-documents-format-intact.html">long documents</a> · <a href="rewrite-in-35-languages.html">35 languages</a> · <a href="test-with-100-free-credits.html">free credits</a> · <a href="numbers-citations-stay-frozen.html">frozen facts</a> · <a href="../">index</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>

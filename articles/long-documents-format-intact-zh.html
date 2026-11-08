@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>长文改写要守住什么：无字数上限、原样式不动、可编辑进出 — HumanPen</title>
+<meta name="description" content="十万字论文或 90 页演示稿改写后的验收清单：标题编号、表格、脚注、题注、分页符、交叉引用分别怎么查。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/long-documents-format-intact-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "真的没有字数上限？", "acceptedAnswer": {"@type": "Answer", "text": "产品收 DOCX、PPTX、TXT，没有字数上限，无论多长都保留原样式返回。但仍要自己验收：格式故障最喜欢藏在长文里。"}}, {"@type": "Question", "name": "六万字的论文能处理吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。按实际改写词数计费，所以只改被标段落是处理这种体量最划算的方式。"}}, {"@type": "Question", "name": "脚注被重新编号了怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "这是格式故障，不是可接受的副作用。打开原件重新导出一次，并记录下来，避免下一章再犯。"}}, {"@type": "Question", "name": "API 也支持长文件吗？", "acceptedAnswer": {"@type": "Answer", "text": "同一份余额在网页工具与 API 通用，长文件自动化不需要另买方案。"}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>长文档：无字数上限，原样式不动，可编辑文件进出</h1>
+<p class="muted">Charles Li / HumanPen · 长文 · 2026-11-08</p>
+
+<p>长文改写的失败从来不是「工具拒收文件」，而是一份百页论文回来之后：标题编号从 1 重新开始、三张表被重排、41 个脚注重新编号。<a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen 收 DOCX、PPTX、TXT，没有字数上限，原样式原样保留</a>——但你还是得自己验收，下面就是验收清单。</p>
+<div class="box"><strong>一条底线：</strong>可编辑文件进，可编辑文件出。如果工具回你一个粘贴框，那不是文档工具，是多了几步的文本编辑器，代价是你已经付过钱的那套格式。</div>
+<h2>长文导出真正会坏的地方</h2>
+<table>
+<tr><th>元素</th><th>典型故障</th><th>30 秒怎么查</th></tr>
+<tr><td>标题编号</td><td>从 1 重排，或三级被提成二级</td><td>拉一下导航窗格，大纲应与原件一致</td></tr>
+<tr><td>表格</td><td>列宽重排、合并单元格被拆</td><td>打开最宽那张表，看右边缘是否对齐</td></tr>
+<tr><td>脚注</td><td>重新编号，或被挪成尾注</td><td>跳到最后一页，第 87 个脚注应该还是 87</td></tr>
+<tr><td>图表与题注</td><td>题注与图脱开</td><td>点一下题注，它应随图移动</td></tr>
+<tr><td>分页符</td><td>章节连在一起</td><td>检查原本另起一页的那一章</td></tr>
+<tr><td>交叉引用</td><td>「见 4.2 节」指不到任何地方</td><td>按住 Ctrl/Cmd 点两处引用</td></tr>
+</table>
+<h2>「没有字数上限」改变了什么</h2>
+<p>按份计费的工具会逼你把文件拆开：先一半论文，另一半以后再说。拆分正是交叉引用断掉、两半语气开始不一致的地方。整份文件一次文档级处理，论证是连续的；而按「实际改写词数」计费，意味着六万字里只改被标记的段落，花费仍然可控。</p>
+<h2>验收顺序</h2>
+<ol>
+<li><strong>打开文件，不要看预览。</strong>预览恰好会隐藏会坏的那些细节。</li>
+<li><strong>大纲检查。</strong>标题层级与编号和你发出去的版本完全一致。</li>
+<li><strong>表格检查。</strong>最宽的三张表，加上任何有合并单元格的表。</li>
+<li><strong>脚注检查。</strong>看第一个和最后一个；这两个对上，中间的几乎一定对。</li>
+<li><strong>分页检查。</strong>章首、附录首，以及你自己插过的每一个分页符。</li>
+<li><strong>读一段改过的文字。</strong>念出来不像你，说明改过头了。</li>
+</ol>
+<h2>长文与检测报告的关系</h2>
+<p>如果报告覆盖了这份文件，就导入它、让报告决定范围。百页文档里被标记的通常只有很少几段，整篇重写既贵又没必要。数字、单位、公式、引用、术语与论断强度全部原样保留——长文恰恰是最难靠肉眼发现「某个百分比被悄悄改了」的地方。</p>
+<p>注册送 100 免费额度、额度不过期，同一份余额在网页工具和 API 通用，够你把真实的一章连导出一起跑完再决定。没有工具能承诺分数；一个合格的文档工具欠你的，是一份还打得开、还改得动、还像你写的文件。</p>
+
+<div class="box"><strong>HumanPen 能做什么，四句话说清：</strong><ul>
+<li>导入 Turnitin 或 iThenticate 报告，只重写被标记的段落，再用同一类报告复查。</li>
+<li>改写引擎覆盖 35 种语言——在原文语言里改写，不走「译成英文再译回来」。</li>
+<li>原生 PPTX：每页文字原位改写，版式与演讲者备注不动。</li>
+<li>注册送 100 免费额度、额度不过期 · 无字数上限 · 原样式不动 · 可编辑文件进、可编辑文件出。</li></ul></div>
+<h2>FAQ</h2>
+<h3>真的没有字数上限？</h3>
+<p>产品收 DOCX、PPTX、TXT，没有字数上限，无论多长都保留原样式返回。但仍要自己验收：格式故障最喜欢藏在长文里。</p>
+<h3>六万字的论文能处理吗？</h3>
+<p>可以。按实际改写词数计费，所以只改被标段落是处理这种体量最划算的方式。</p>
+<h3>脚注被重新编号了怎么办？</h3>
+<p>这是格式故障，不是可接受的副作用。打开原件重新导出一次，并记录下来，避免下一章再犯。</p>
+<h3>API 也支持长文件吗？</h3>
+<p>同一份余额在网页工具与 API 通用，长文件自动化不需要另买方案。</p>
+<p class="muted">相关：<a href="ai-detection-report-field-guide.html">报告字段指南</a> · <a href="import-turnitin-report-loop-zh.html">报告驱动闭环</a> · <a href="native-pptx-rewrite-in-place-zh.html">原生 PPTX</a> · <a href="long-documents-format-intact-zh.html">长文档</a> · <a href="rewrite-in-35-languages-zh.html">35 种语言</a> · <a href="test-with-100-free-credits-zh.html">免费额度</a> · <a href="numbers-citations-stay-frozen-zh.html">事实冻结</a> · <a href="../">目录</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>

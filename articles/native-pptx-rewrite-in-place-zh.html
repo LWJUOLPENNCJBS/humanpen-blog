@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>原生 PPTX 改写：答辩稿的「版式不动」到底指什么 — HumanPen</title>
+<meta name="description" content="逐页拆解原生 PPTX 改写：文本框原位、图表与母版保留、演讲者备注同步改写，回传仍是可编辑 PPTX。附三张高风险页的检查法。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/native-pptx-rewrite-in-place-zh.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "动画会保留吗？", "acceptedAnswer": {"@type": "Answer", "text": "动画引用挂在形状层级，随形状一起保留，形状内的文字被改写。正式排练前请把回来的文稿完整走一遍。"}}, {"@type": "Question", "name": "可以只改几页吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，范围本来就是重点：按被标记的地方处理，没被质疑的页面保持你已通过的措辞。"}}, {"@type": "Question", "name": "90 页附录稿能处理吗？", "acceptedAnswer": {"@type": "Answer", "text": "文件没有字数上限，长度不是限制；导出后照旧检查表格列宽、题注和备注。"}}, {"@type": "Question", "name": "输出是可编辑的吗？", "acceptedAnswer": {"@type": "Answer", "text": "是。输出是可编辑 PPTX，不是渲染后的 PDF，也不是图片集。"}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>原生 PPTX：每页文字原位改写，版式不动，回传可编辑</h1>
+<p class="muted">Charles Li / HumanPen · PowerPoint · 2026-11-08</p>
+
+<p>答辩 PPT 不是「带页的文档」。位置是调过的，图表锚定在某几个单元格上，每页下面的备注才是你上台真正要说的话。把幻灯片文字粘进网页框再粘回来，这三样全毁。<a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen 直接改 PPTX 文件本身，逐页原位重写文字</a>，回来的文件打开后版式、图表、母版和演讲者备注都还在原处。</p>
+<div class="box"><strong>一个够用的验收动作：</strong>打开回来的演示文稿，翻到你图表最密的那一页，点一下图表。数据链接还在、形状没有被重排，就说明改写发生在文件层，而不是发生在某个文本框里。</div>
+<h2>「原位」逐元素拆开看</h2>
+<table>
+<tr><th>元素</th><th>发生什么</th></tr>
+<tr><td>正文与标题</td><td>在原有文本框内重写；位置和尺寸不变</td></tr>
+<tr><td>版式与主题</td><td>不动——外观仍由幻灯片母版决定</td></tr>
+<tr><td>图表与表格</td><td>连同数据与格式一起保留</td></tr>
+<tr><td>图片、图标、形状</td><td>不移动、不重新裁切</td></tr>
+<tr><td>演讲者备注</td><td>与可见文字一起改写，不被丢弃</td></tr>
+<tr><td>输出</td><td>可编辑 PPTX，不是 PDF，也不是一套图片</td></tr>
+</table>
+<h2>纯文本工具为什么会坑人</h2>
+<p>纯文本工具回给你一大段段落。你接着花一整晚往幻灯片里重新粘贴，而每一次粘贴都可能让某个框偏四个像素、断一行，或者悄悄丢掉凌晨两点写的那条备注。破绽通常出现在导出后：字体掉回默认、项目符号层级被重置、三行标题变成两行加一个孤零零的词。</p>
+<h2>省时间的顺序</h2>
+<ol>
+<li><strong>先把内容写完。</strong>给还在改的稿子做改写，等于白跑一遍；你后来补的那页才是没人检查过的。</li>
+<li><strong>按文件改写，不要按选中文字改写。</strong>数字、引用、术语保持冻结。</li>
+<li><strong>打开结果，先看三张高风险页</strong>：图表最密的、表格最长的、整页铺图的。</li>
+<li><strong>照着备注排练</strong>，因为紧张时你真正会说的是备注里的内容。</li>
+<li><strong>如果报告覆盖了这份 PPT</strong>，用开始时的同类报告复查，再对仍被标记的部分做第二轮精准改写。</li>
+</ol>
+<h2>语言与长度</h2>
+<p>改写引擎覆盖 <strong>35 种语言</strong>，所以印尼语、越南语、西班牙语或中文写的稿子是在自己的语法里被改写，而不是先译成英文再译回来。文件没有字数上限——当你的附录稿有 90 页、主稿 20 页时，这条就很关键。</p>
+<h2>这不是什么</h2>
+<p>它不是「保证你的 PPT 能过检」。检测是估计值，模型会更新，认定标准由学校定。原生改写给你的是一份你还打得开、还改得动、还能上台讲的文稿，以及你花两周才做出来的那套版式。</p>
+
+<div class="box"><strong>HumanPen 能做什么，四句话说清：</strong><ul>
+<li>导入 Turnitin 或 iThenticate 报告，只重写被标记的段落，再用同一类报告复查。</li>
+<li>改写引擎覆盖 35 种语言——在原文语言里改写，不走「译成英文再译回来」。</li>
+<li>原生 PPTX：每页文字原位改写，版式与演讲者备注不动。</li>
+<li>注册送 100 免费额度、额度不过期 · 无字数上限 · 原样式不动 · 可编辑文件进、可编辑文件出。</li></ul></div>
+<h2>FAQ</h2>
+<h3>动画会保留吗？</h3>
+<p>动画引用挂在形状层级，随形状一起保留，形状内的文字被改写。正式排练前请把回来的文稿完整走一遍。</p>
+<h3>可以只改几页吗？</h3>
+<p>可以，范围本来就是重点：按被标记的地方处理，没被质疑的页面保持你已通过的措辞。</p>
+<h3>90 页附录稿能处理吗？</h3>
+<p>文件没有字数上限，长度不是限制；导出后照旧检查表格列宽、题注和备注。</p>
+<h3>输出是可编辑的吗？</h3>
+<p>是。输出是可编辑 PPTX，不是渲染后的 PDF，也不是图片集。</p>
+<p class="muted">相关：<a href="ai-detection-report-field-guide.html">报告字段指南</a> · <a href="import-turnitin-report-loop-zh.html">报告驱动闭环</a> · <a href="native-pptx-rewrite-in-place-zh.html">原生 PPTX</a> · <a href="long-documents-format-intact-zh.html">长文档</a> · <a href="rewrite-in-35-languages-zh.html">35 种语言</a> · <a href="test-with-100-free-credits-zh.html">免费额度</a> · <a href="numbers-citations-stay-frozen-zh.html">事实冻结</a> · <a href="../">目录</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>

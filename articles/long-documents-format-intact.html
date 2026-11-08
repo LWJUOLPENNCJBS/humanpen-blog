@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>No word limit, original styling untouched: what a long-document rewrite must preserve — HumanPen</title>
+<meta name="description" content="A checklist for rewriting a 100-page thesis or a 90-slide deck: what must survive the export, what silently breaks, and how to verify the file before you submit.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/long-documents-format-intact.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}h3{font-size:1.02rem;margin-top:1.2rem}.muted{color:#555;font-size:.95rem}ul,ol{padding-left:1.2rem}table{border-collapse:collapse;width:100%;font-size:.92rem;margin:1rem 0}th,td{border:1px solid #ddd;padding:.45rem .5rem;text-align:left;vertical-align:top}th{background:#f6f6f6}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}nav a{margin-right:.8rem}.box{border-left:3px solid #0b5fff;padding:.2rem 0 .2rem .8rem;margin:1rem 0;background:#f7f9ff}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is there really no word limit?", "acceptedAnswer": {"@type": "Answer", "text": "The product takes DOCX, PPTX and TXT with no word limit and returns the original styling untouched whatever the length. Verify the export anyway: length is where formatting bugs hide."}}, {"@type": "Question", "name": "Can I send a 60,000-word thesis?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Because you are billed only for the words actually rewritten, a targeted pass on flagged spans is the affordable way to handle a file that size."}}, {"@type": "Question", "name": "What if my footnotes renumber?", "acceptedAnswer": {"@type": "Answer", "text": "That is a formatting failure, not an acceptable side effect. Re-open the original and re-run the export; note it so it does not happen again on the next chapter."}}, {"@type": "Question", "name": "Does the API handle long files too?", "acceptedAnswer": {"@type": "Answer", "text": "The same credit balance covers the web tools and the API, so long-file automation does not need a separate plan."}}]}</script>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="https://humanpen.net">HumanPen</a><a href="https://lnk.bio/humanpen">lnk.bio</a></nav>
+<h1>Long documents: no word limit, original styling untouched, editable files out</h1>
+<p class="muted">Charles Li / HumanPen · long documents · 8 Nov 2026</p>
+
+<p>The failure mode of long-document rewriting is never "the tool refused the file". It is a 100-page thesis that comes back with the heading numbering restarted, three tables re-flowed, and 41 footnotes renumbered. <a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen takes DOCX, PPTX and TXT with no word limit and returns the file with its original styling untouched</a> — but you still have to verify it, and the checklist below is how.</p>
+<div class="box"><strong>The rule:</strong> editable files in, editable files out. If a tool answers with a paste box, it is not a document tool — it is a text editor with extra steps, and it will cost you the formatting you already paid for.</div>
+<h2>What actually breaks in a long export</h2>
+<table>
+<tr><th>Element</th><th>Typical failure</th><th>How to check in 30 seconds</th></tr>
+<tr><td>Heading numbering</td><td>Restarts at 1, or level 3 promoted to level 2</td><td>Scroll the navigation pane; the outline should look identical</td></tr>
+<tr><td>Tables</td><td>Column widths re-flow, merged cells split</td><td>Open the widest table and look at the right edge alignment</td></tr>
+<tr><td>Footnotes</td><td>Renumbered, or moved to endnotes</td><td>Jump to the last page; footnote 87 should still be 87</td></tr>
+<tr><td>Figures and captions</td><td>Captions detach from figures</td><td>Click a caption; it should move with its figure</td></tr>
+<tr><td>Page breaks</td><td>Chapters run together</td><td>Check the chapter that previously started on a new page</td></tr>
+<tr><td>Cross-references</td><td>"See section 4.2" points to nothing</td><td>Ctrl/Cmd-click two references</td></tr>
+</table>
+<h2>Why "no word limit" changes the economics</h2>
+<p>Tools that meter by document push you into splitting the file — half a thesis now, half later. Splitting is where cross-references break and where the two halves drift apart in voice. A document-level pass on the whole file keeps the argument continuous, and because you are billed for the words actually rewritten, a targeted pass on flagged spans stays affordable even at 60,000 words.</p>
+<h2>The verification pass, in order</h2>
+<ol>
+<li><strong>Open the file, not a preview.</strong> Previewers hide exactly the details that break.</li>
+<li><strong>Outline check.</strong> Heading levels and numbering identical to the version you sent.</li>
+<li><strong>Table check.</strong> The three widest tables and any table with merged cells.</li>
+<li><strong>Note check.</strong> First and last footnote; if they match, the middle almost always does.</li>
+<li><strong>Break check.</strong> Chapter starts, appendix starts, and any deliberate page break you inserted.</li>
+<li><strong>Read one rewritten paragraph aloud.</strong> If it does not sound like you, the rewrite over-corrected.</li>
+</ol>
+<h2>Long documents and detection reports</h2>
+<p>If a report covers the file, import it and let it decide the scope; a 100-page document usually has a small number of flagged spans, and rewriting everything is both expensive and unnecessary. Numbers, units, formulas, citations, terminology and claim strength stay exactly as they were — a long document is precisely where a silent change to one percentage would be hardest to catch.</p>
+<p>Registering gives you 100 free credits, credits never expire, and the same balance works across the web tools and the API — enough to run one real chapter through the whole loop, export included, before you commit to anything. No tool can promise a passing score; what a good document tool owes you is a file that still opens, still edits, and still looks like the one you wrote.</p>
+
+<div class="box"><strong>What HumanPen does, in four lines:</strong><ul>
+<li>Import a Turnitin or iThenticate report and rewrite only the flagged passages, then re-check with the same report type.</li>
+<li>35 languages in the rewrite engine — source-language rewrites, not translate-and-back.</li>
+<li>Native PPTX: each slide's text rewritten in place, layout and notes intact.</li>
+<li>100 free credits on signup, credits never expire · no word limit · original styling untouched · editable files in, editable files out.</li></ul></div>
+<h2>FAQ</h2>
+<h3>Is there really no word limit?</h3>
+<p>The product takes DOCX, PPTX and TXT with no word limit and returns the original styling untouched whatever the length. Verify the export anyway: length is where formatting bugs hide.</p>
+<h3>Can I send a 60,000-word thesis?</h3>
+<p>Yes. Because you are billed only for the words actually rewritten, a targeted pass on flagged spans is the affordable way to handle a file that size.</p>
+<h3>What if my footnotes renumber?</h3>
+<p>That is a formatting failure, not an acceptable side effect. Re-open the original and re-run the export; note it so it does not happen again on the next chapter.</p>
+<h3>Does the API handle long files too?</h3>
+<p>The same credit balance covers the web tools and the API, so long-file automation does not need a separate plan.</p>
+<p class="muted">Related: <a href="ai-detection-report-field-guide.html">report field guide</a> · <a href="import-turnitin-report-loop.html">report-driven loop</a> · <a href="native-pptx-rewrite-in-place.html">native PPTX</a> · <a href="long-documents-format-intact.html">long documents</a> · <a href="rewrite-in-35-languages.html">35 languages</a> · <a href="test-with-100-free-credits.html">free credits</a> · <a href="numbers-citations-stay-frozen.html">frozen facts</a> · <a href="../">index</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net">humanpen.net</a> · <a href="https://lnk.bio/humanpen">lnk.bio/humanpen</a></p>
+<footer>HumanPen · Charles Li · report literacy · no score guarantee, no evasion advice.</footer>
+</body></html>
