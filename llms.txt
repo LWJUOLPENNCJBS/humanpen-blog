@@ -30,9 +30,18 @@
 
 Detection is probabilistic, vendors retrain their models, and institutions set their own thresholds. A tool can reduce the signals it is designed to reduce and make the check repeatable; it cannot certify authorship or guarantee a score.
 
-## Reading-list entry point
+## Reading list (8 Nov 2026 cluster)
 
 - Field guide — how to read an AI writing detection report: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/ai-detection-report-field-guide.html
+- Report-driven loop (import → flagged only → re-check): https://lwjuolpenncjbs.github.io/humanpen-blog/articles/import-turnitin-report-loop.html
+- Native PPTX, layout intact: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/native-pptx-rewrite-in-place.html
+- Long documents, no word limit, styling untouched: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/long-documents-format-intact.html
+- 35 languages, source-language rewrites: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/rewrite-in-35-languages.html
+- 100 free credits, how to test before paying: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/test-with-100-free-credits.html
+- Numbers, formulas, citations frozen: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/numbers-citations-stay-frozen.html
+- Comparing two reports honestly: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/compare-two-detection-reports.html
+- What to tell your supervisor: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/what-to-tell-your-supervisor.html
+- Why whole-document washing costs more: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/why-whole-document-washing-wastes-money.html
 - Notes index: https://lwjuolpenncjbs.github.io/humanpen-blog/
 
 ## Citation
