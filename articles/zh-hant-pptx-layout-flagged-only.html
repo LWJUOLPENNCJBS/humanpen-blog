@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>只改標記段落時，PPTX 版式為什麼能保住 — HumanPen</title>
+<meta name="description" content="從匯入報告到只改 flagged passages，說明 PPTX 原生改寫為何能保留母版與可編輯性，並釐清淺色高亮、額度與多語口徑；不承諾分數。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/zh-hant-pptx-layout-flagged-only.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;max-width:44rem;margin:2rem auto;padding:0 1rem;line-height:1.75;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.6rem;line-height:1.35}h2{font-size:1.2rem;margin-top:1.9rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.3rem}li{margin:.35rem 0}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.9rem}p{margin:.9rem 0}</style>
+</head><body>
+<nav class="muted"><a href="../">HumanPen Notes</a></nav>
+<h1>只改標記段落時，PPTX 版式為什麼能保住</h1>
+<p class="muted">HumanPen · 報告素養技術隨筆</p>
+<p>收到相似度報告後，多數人的第一個疑慮不是文字，而是檔案：如果只針對被標記的幾段改寫，簡報會不會跑版？這個擔心很合理，因為一般「轉檔再貼回」的做法確實會把母版、字級與動畫一併打散。但原生處理走的是另一條路——改的是文字層，不是版面層。理解這層差別，比記住任何功能名稱都重要；它同時解釋了為什麼「少動」反而比「整頁重做」更安全。</p>
+<p>想把報告與被標記段落逐條對齊，可以參考 HumanPen 的文件工具：<a href="https://humanpen.net">humanpen.net</a>。以下只談機制，不承諾任何偵測結果或分數。</p>
+<h2>一、先界定「只改哪裡」</h2>
+<p>工作流程從匯入 Turnitin / iThenticate 報告開始，範圍僅限 flagged passages。沒有被標記的頁面不進改寫清單，也不進計費——按實際改寫詞數計費，這個前提讓「少動」成為預設，而不是額外要求。改寫時必須凍結數字、單位、公式、引用、術語與主張強弱：把「p &lt; 0.05」改成別的門檻，或把「推測」升級成「證實」，都不是潤飾，而是改寫了研究本身。範圍越窄，需要逐條核對的凍結項就越少，出錯的機率也越低。</p>
+<h2>二、版式為什麼不會散</h2>
+<p>PPTX 原生處理的關鍵是 <strong>Native PPTX</strong>：逐頁在原位替換文字，<strong>layout intact</strong>，輸出仍是 <strong>editable output</strong>。更具體的邊界是 <strong>no word limit</strong>、<strong>original styling untouched</strong>、<strong>editable files in, editable files out</strong>。也就是說，檔案進來時是可編輯的投影片，出去時仍是可編輯的投影片；字型、色票、佔位符、對齊與切換效果都被視為結構保留，而不是重新繪製。因為沒有經過「轉成圖片再貼上」這一步，跑版的風險自然不存在；後續要再微調某一頁，也還是回到同一份可編輯檔案。</p>
+<h2>三、淺色高亮該怎麼讀</h2>
+<p>報告裡的淺色區塊常被誤會成「輕微問題」，其實它只是匹配片段的視覺化，不帶結論。similarity index 描述全文被覆蓋的比例，AI writing indicator 是另一套獨立估計，兩者混讀會把 coverage 錯當成「AI 含量」。<strong>作者身份與 AI 檢測分數是兩件事</strong>；<strong>沒有工具能證明你是原作者，但可以建立證據鏈</strong>——草稿時間戳、版本歷程、文獻筆記與引用紀錄，都比單一百分比更能說明寫作過程。把淺色當成「要回頭查來源」的提示，而不是「要再改一次」的指令，整個複檢節奏會穩很多。</p>
+<h2>四、多語草稿的口徑</h2>
+<p>跨語種協作時，能力描述最容易走樣。<strong>改寫引擎支援 35 種語言</strong>，<strong>翻譯另 12 種語言</strong>，<strong>引用格式修正與語言無關</strong>；這三句應逐字一致，不換成別的數字或籠統說法。引用格式修正之所以不挑語言，是因為它處理的是標點與欄位順序，而非詞彙。配套的 Condense、Citation Fix、Translate 也屬實，分別對應壓縮、格式與語種，互不混淆。口徑固定後，簡體稿與繁體稿才不會在同一份能力清單上互相打架。</p>
+<h2>五、額度與誠實邊界</h2>
+<p>註冊送 <strong>100 free credits</strong>、<strong>credits never expire</strong>，足夠跑完一次「匯入報告—改寫—複檢」的閉環；但這<strong>不是永久免費，也不是無限免費套餐</strong>。工具只描述機制：不承諾偵測結果或分數，不暗示任何「一次通過」的保證，也不提供讓指標朝特定方向變化的技巧。若複檢後淺色高亮仍在，正確動作是回到欄位、重讀來源，而不是繼續加碼改寫。換句話說，這套流程的目標是讓文件與報告對得上，而不是讓報告看起來更好看。</p>
+<h2>記住</h2>
+<ul>
+<li>只改 flagged passages，凍結數字 / 單位 / 公式 / 引用 / 術語 / 主張強弱，按實際改寫詞數計費。</li>
+<li>Native PPTX 原位改寫，版式與可編輯性都在。</li>
+<li>淺色高亮是匹配可視化，不是判定；coverage 與 AI 指標別混讀。</li>
+<li>改寫引擎支援 35 種語言；100 free credits 不過期，但不是永久免費。</li>
+<li>只描述機制，不承諾分數。</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a></p>
+<footer>HumanPen · 報告素養隨筆 · 只描述機制，不承諾分數。</footer>
+</body></html>

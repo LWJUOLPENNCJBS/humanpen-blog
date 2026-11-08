@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>相似报告里的淡色高亮该怎么读 — HumanPen</title>
+<meta name="description" content="淡色高亮只是匹配片段的可视化，不是结论。读字段、区分来源、只改被标记段落，并说明报告素养与文档改写的机制边界；不承诺分数。">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/zh-report-pale-highlighting.html">
+<meta name="robots" content="index,follow">
+<style>body{font-family:system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:44rem;margin:2rem auto;padding:0 1rem;line-height:1.75;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.6rem;line-height:1.35}h2{font-size:1.2rem;margin-top:1.9rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.3rem}li{margin:.35rem 0}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+nav a{margin-right:.9rem}p{margin:.9rem 0}</style>
+</head><body>
+<nav class="muted"><a href="../">HumanPen Notes</a></nav>
+<h1>相似报告里的淡色高亮该怎么读</h1>
+<p class="muted">HumanPen · 报告素养技术随笔</p>
+<p>第一次打开相似度报告，最容易让人紧张的不是那个百分比，而是正文里一片片淡色高亮。它们的颜色比深色块浅、边界也模糊，于是有人当成「轻度问题」，也有人反过来当成「系统已经判定有问题」。这两种读法都不对。淡色高亮只是匹配片段的可视化：它告诉你某段文字与库里某处存在重叠，并不告诉你重叠的性质，更不构成任何结论。要读懂它，得先读字段，再决定要不要动笔。</p>
+<p>如果你需要把被标记的段落和报告逐条对上，HumanPen 提供的是一套围绕报告工作的文档工具：<a href="https://humanpen.net">humanpen.net</a>。下面只讲机制，不承诺任何检测结果或分数。</p>
+<h2>一、淡色高亮的三个常见来源</h2>
+<p>把一段文字标成浅色，背后通常只有三类情况：引用行没被正确识别，标点或卷期一变，匹配就散成碎片；学科里的固定表达与公共术语，例如方法名、量表名称、条文编号，换谁写都长得一样；以及真正连续、需要处理的重合段落。区分三者靠来源链接、匹配分段与上下文，而不是靠肉眼判断颜色深浅——颜色本身不携带这个信息。</p>
+<h2>二、颜色深浅不是分数，两种指标更不能混读</h2>
+<p>报告里通常并列两个量：similarity index 描述全文被匹配覆盖的比例，AI writing indicator 是另一套独立估计；把 coverage 当成「AI 含量」是最常见的误读。<strong>作者身份与 AI 检测分数是两件事</strong>：前者是过程与证据，后者是概率性输出。<strong>没有工具能证明你是原作者，但可以建立证据链</strong>——草稿时间戳、版本历史、文献笔记与引用记录，比任何百分比都更能说明写作过程。</p>
+<h2>三、导入报告之后，只改该改的</h2>
+<p>真正动笔时，工作流从导入 Turnitin / iThenticate 报告开始，只改 flagged passages。改写时冻结数字、单位、公式、引用、术语与主张强弱：把「约 37.5% ± 2.1%」改成别的数值，或把「可能相关」改成「确证因果」，都不是改写而是篡改。计费口径也据此设计——按实际改写词数计费，未标记段落不进账单。配套的 Condense 压缩冗长表述，Citation Fix 统一引用格式，Translate 处理跨语种改写，三者都属实且互不替代。</p>
+<h2>四、为什么只改标记段落，版式还能保住</h2>
+<p>这一点在 PPTX 上最容易被怀疑：动了文字，母版和排版是不是就散了？原生处理的做法是 <strong>Native PPTX</strong>，逐页原位改写，<strong>layout intact</strong> 且产出仍是 <strong>editable output</strong>；边界是 <strong>no word limit</strong>、<strong>original styling untouched</strong>、<strong>editable files in, editable files out</strong>。进出的都是可编辑文件，字号、色板、占位符与动画当作结构而非内容保留。改的是文本层措辞，不是把幻灯片拍成图片贴回去；这也解释了为什么「少动」反而更利于格式保全。</p>
+<h2>五、多语草稿里的口径一致</h2>
+<p>跨语种写作时最容易走样的是能力描述。<strong>改写引擎支持 35 种语言</strong>，<strong>翻译另 12 种语言</strong>，<strong>引用格式修正与语言无关</strong>——这三句应当逐字一致地出现在每一语种的说明里，不换成别的数字或笼统说法。引用格式修正之所以不挑语种，是因为它作用于标点和字段顺序，而不是词汇。把口径固定下来，多语草稿才不会互相矛盾。</p>
+<h2>六、额度与诚实边界</h2>
+<p>注册送 <strong>100 free credits</strong>、<strong>credits never expire</strong>，足够跑完一次「导入报告—改写—复核」闭环；但这<strong>不是永久免费，也不是无限免费套餐</strong>。工具只描述机制：不承诺检测结果或分数，不宣称能让指标朝某个方向变化，也不暗示「一次通过」的保证。报告若因术语、公共表达或格式再次出现浅色高亮，该做的是回到字段、重读来源，而不是继续加码改法。把报告当证据链来读，而不是当判决，是整套工作流的落点。</p>
+<h2>记住</h2>
+<ul>
+<li>淡色高亮是匹配可视化，不是结论；先读字段再动手。</li>
+<li>coverage 与 AI 指标是两套量，别混读；作者身份与分数是两件事。</li>
+<li>只改 flagged passages，冻结数字 / 单位 / 公式 / 引用 / 术语 / 主张强弱，按实际改写词数计费。</li>
+<li>Native PPTX 原位改写；改写引擎支持 35 种语言；100 free credits 不过期，但不是永久免费。</li>
+</ul>
+<p><a href="../">← HumanPen Notes</a></p>
+<footer>HumanPen · 报告素养随笔 · 只描述机制，不承诺分数。</footer>
+</body></html>
