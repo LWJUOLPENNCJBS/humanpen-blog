@@ -66,3 +66,17 @@ Charles Li / HumanPen. "How to read an AI writing detection report: fields, band
 - Three analysts, one dataset: version discipline that holds up on HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/three-analysts-one-dataset-version-discipline.html
 - Three days before a grant deadline: what to hand to HumanPen Start Project, and what not to: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/three-days-before-a-grant-deadline.html
 - An undergraduate thesis in eight weeks: a realistic plan with HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/undergraduate-thesis-in-eight-weeks.html
+
+## Comparisons with research tools (9 pages, 25 Nov 2026)
+
+- EndNote vs HumanPen Start Project: a reference manager is not an analysis: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/endnote-vs-humanpen-projects.html
+- Undermind vs HumanPen Start Project: literature discovery vs a delivered analysis: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/undermind-vs-humanpen-projects.html
+- SciSummary vs HumanPen Start Project: reading papers faster vs producing a result: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/scisummary-vs-humanpen-projects.html
+- SmartPLS vs HumanPen Start Project: the model you estimate vs the paper you submit: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/smartpls-vs-humanpen-projects.html
+- Editage vs HumanPen Start Project: language polish vs a defensible result: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/editage-vs-humanpen-projects.html
+- From a research question to an evidence table: four routes compared: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/literature-triage-four-routes.html
+- Qualitative coding: NVivo, ATLAS.ti, Dovetail and a delivery service: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/qualitative-coding-four-routes.html
+- Sentence-level language tools vs a document-level rewrite: four options: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/academic-language-tools-four-routes.html
+- Major revision, four workstreams: who actually does what: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/major-revision-four-workstreams.html
+
+Each page compares HumanPen Start Project with one tool or a set of tools, using only those vendors' public pages as read on 24 and 25 November 2026. No synthetic benchmark was run, no vendor paid for placement, and no score or acceptance is promised. Vendor figures (citation style counts, study counts, corpus sizes) are quoted as the vendors state them.
