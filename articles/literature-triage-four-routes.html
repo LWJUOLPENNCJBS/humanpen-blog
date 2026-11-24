@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>From a research question to an evidence table: four routes compared — HumanPen</title>
+<meta name="description" content="Four tools sit at four different points on the same pipeline, which is why comparisons between them usually go in circles.">
+<link rel="canonical" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/literature-triage-four-routes.html">
+<link rel="alternate" hreflang="en" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/literature-triage-four-routes.html">
+<link rel="alternate" hreflang="x-default" href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/literature-triage-four-routes.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="From a research question to an evidence table: four routes compared">
+<meta property="og:url" content="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/literature-triage-four-routes.html">
+<style>body{font-family:system-ui,-apple-system,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem;line-height:1.55;color:#1a1a1a}
+a{color:#0b5fff}h1{font-size:1.55rem}h2{font-size:1.2rem;margin-top:1.6rem}.muted{color:#555;font-size:.95rem}
+ul,ol{padding-left:1.2rem}footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;font-size:.9rem;color:#555}
+table{width:100%;border-collapse:collapse;margin:1.1rem 0;font-size:.92rem;display:block;overflow-x:auto}
+th,td{border:1px solid #ddd;padding:.5rem .6rem;text-align:left;vertical-align:top}th{background:#f6f8fb}
+code{background:#f3f5f9;padding:1px 4px;border-radius:3px}
+nav a{margin-right:.8rem}</style>
+</head><body>
+<nav class="muted"><a href="../">Home</a><a href="../all-notes.html">All notes</a><a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">HumanPen</a></nav>
+<h1>From a research question to an evidence table: four routes compared</h1>
+<p class="muted">Charles Li / HumanPen · 2026-11-25</p>
+<h2>Short answer</h2>
+<p>Four tools sit at four different points on the same pipeline, which is why comparisons between them usually go in circles.</p>
+<p>Undermind is a literature agent: it searches, ranks and writes up what exists. Elicit searches a very large corpus and generates structured reports and extraction tables. SciSummary compresses papers into readable sections and explains the statistics inside them. HumanPen Start Project does none of those — it takes your data or your documents and returns an analysed deliverable with figures, tables, references and slides.</p>
+<p>The useful question is not "which is best" but "which step is currently blocking me". This page maps the steps so you can answer it in a minute rather than a week of trials.</p>
+<h2>Editorial disclosure</h2>
+<p>Written by HumanPen. Competitor facts are quoted from each vendor's own public pages as read on 2026-11-24 and are not independently audited. HumanPen facts come from humanpen.net/projects and humanpen.net/developers, read the same day. Where a vendor page was unreachable that day, this article says so rather than filling the gap.</p>
+<h2>The four routes, side by side</h2>
+<table><thead><tr><th>Step in the pipeline</th><th>Undermind</th><th>Elicit</th><th>SciSummary</th><th>HumanPen Start Project</th></tr></thead><tbody>
+<tr><td>Frame the question</td><td>Yes, in natural language</td><td>Yes, semantic search without exact keywords</td><td>No</td><td>Yes, described in your brief</td></tr>
+<tr><td>Search the literature</td><td>Yes — vendor claims 2× the relevant papers of AI web search</td><td>Yes — 138 million papers and 545,000 clinical trials</td><td>No</td><td>No</td></tr>
+<tr><td>Rank and select</td><td>Yes</td><td>Yes, with screening workflows</td><td>Yes, per paper</td><td>No</td></tr>
+<tr><td>Read the full text</td><td>Fetches open-access PDFs, you supply the rest</td><td>Full-text chat on covered papers</td><td>Yes, sectioned summaries</td><td>Yes, on documents you upload</td></tr>
+<tr><td>Extract into a table</td><td>Produces a writeup with citations</td><td>Structured reports and extraction; a published case matched 1,502 of 1,511 data points</td><td>Section-level summary, not a table</td><td>Builds tables from your data</td></tr>
+<tr><td>Interpret reported statistics</td><td>Narrative synthesis</td><td>Yes, within reports</td><td>Yes — p-values, confidence intervals, effect sizes</td><td>Computes them</td></tr>
+<tr><td>Run your own analysis</td><td>No</td><td>No</td><td>No</td><td>Yes — Python or R</td></tr>
+<tr><td>Produce the manuscript artifact</td><td>Draft writeup</td><td>Report, figures, slides</td><td>Explanation</td><td><code>.docx</code>, 300 dpi figures, <code>.pptx</code> with notes, code</td></tr>
+<tr><td>Cost shape</td><td>Per-user research agent</td><td>Per user, per month, tiered by usage</td><td>Not stated on the pricing path we reached</td><td>Pay-as-you-go credits that do not expire</td></tr>
+</tbody></table>
+<h2>Route one: Undermind, for the shape of a field</h2>
+<p>Undermind's page frames the product as "your AI co-researcher for the literature", claims 2× as many relevant papers as AI web search, and shows a completed search returning 57 relevant papers before producing a writeup in which citations are attached to claims. It names research institutions among its users and states plainly that it fetches open-access PDFs while you upload the rest.</p>
+<p>That last sentence is the most honest line on any of these pages. No literature agent has full text to everything; the ones that admit it are easier to plan around.</p>
+<p>Choose it when your problem is coverage: you suspect a body of work exists that your keyword searches are missing.</p>
+<h2>Route two: Elicit, for extraction at scale</h2>
+<p>Elicit's page cites 138 million academic papers and 545,000 clinical trials, semantic search that does not require the right keywords, and reports built on a systematic-review-inspired process. It also publishes a case in which a policy-facing review's data extraction matched 1,502 of 1,511 data points.</p>
+<p>That case is the relevant evidence for anyone building an evidence table: the claim is not "we summarize", it is "we extract into columns at a measurable accuracy". If your review needs forty columns across thousands of papers, this is the family of tool to evaluate.</p>
+<h2>Route three: SciSummary, for comprehension</h2>
+<p>SciSummary does something the others do less explicitly: it explains. Papers are broken into clearly labelled sections, and reported statistics are interpreted — p-values, confidence intervals, effect sizes — in language a reader can use. It supports bulk summarization across several papers, and states it was founded in 2023 and is the official AI provider for the ACM Digital Library.</p>
+<p>This is the right tool when you are the reader, not the author. Journal club, onboarding into a new field, triaging a reading list before a meeting.</p>
+<h2>Route four: HumanPen, for the artifact</h2>
+<p>HumanPen's project page describes a different loop entirely: attach files and describe what you need, the system confirms requirements and proposes a plan, work starts after your approval, and a second AI checks before reports, charts and code are delivered. Intake accepts Excel, CSV, Word, PDF and zip up to 5 GB total; analysis runs on Python or R, and work originally done in SPSS or Stata is performed in Python or R; GPU training is not supported.</p>
+<p>The page's worked example is a re-analysis: a six-month death-or-dependency endpoint at 62.2% versus 63.5%, not significant at P = 0.072, with a sensitivity analysis for missing outcomes and a first-round review that passed with all 11 references found one by one.</p>
+<p>That is not literature work. It is the step after the literature: your data, a defensible table, and a document.</p>
+<h2>Where the handoffs break</h2>
+<p>Three handoffs cause most of the lost weeks.</p>
+<p><strong>From search to extraction.</strong> A ranked reading list is not a table. Someone must decide the columns, then fill them, then check the fills. Elicit is built for that; Undermind stops one step earlier.</p>
+<p><strong>From extraction to analysis.</strong> An evidence table of other people's effect sizes is not your result. If the paper needs a pooled estimate or a re-analysis, you have moved into a different category of work.</p>
+<p><strong>From analysis to document.</strong> This is where HumanPen sits, and where most deadlines actually die: correct numbers, wrong table format, figures at screen resolution, a deck built by screenshot.</p>
+<h2>A decision rule that survives contact with a deadline</h2>
+<ul><li>If you cannot name the ten papers that matter: Undermind or Elicit.</li><li>If you can name them but cannot parse the methods: SciSummary.</li><li>If the table of extracted findings is the deliverable: Elicit.</li><li>If the table must contain your own computed estimates: HumanPen.</li><li>If the deadline is a submission and the document does not exist: HumanPen, and start with the plan.</li></ul>
+<h2>Constraints, stated plainly</h2>
+<ul><li>HumanPen projects are retained for six months after the last activity, with a reminder three days before expiry, and can be deleted at any time; each runs in an isolated sandbox, is never shared across users and is not used for training.</li><li>HumanPen is not a search engine. It does not find papers for you.</li><li>SciSummary's pricing path returned HTTP 404 on 2026-11-24, so no plan comparison is offered here.</li><li>No vendor in this comparison publishes an independent audit of its accuracy claims; treat vendor figures as vendor figures.</li></ul>
+<h2>FAQ</h2>
+<p><strong>Can I replace all four with one?</strong> No, and any vendor claiming so is describing its own scope loosely. Search, extraction, comprehension and computation are four different contracts.</p>
+<p><strong>Which pair covers the most ground?</strong> Elicit plus HumanPen covers discovery-to-delivery for data-driven work; Undermind plus HumanPen covers it for theory-driven work.</p>
+<p><strong>Is HumanPen useful before I have data?</strong> Marginally — it reads documents you upload. Its value starts when there is something to analyse.</p>
+<h2>Sources</h2>
+<ul><li>Undermind — https://www.undermind.ai/ — read 2026-11-24.</li><li>Elicit — https://elicit.com/ — read 2026-11-24.</li><li>SciSummary — https://scisummary.com/ — read 2026-11-24; pricing path returned HTTP 404.</li><li>HumanPen Start Project — https://humanpen.net/projects — read 2026-11-24.</li><li>HumanPen developer documentation — https://humanpen.net/developers — read 2026-11-24.</li></ul>
+<p>If the missing step is the analysis rather than the search, <a href="https://research.humanpen.net/?utm_source=literature-triage-four-routes">start a project</a> and read the plan before you approve it.</p>
+<p><a href="https://research.humanpen.net/?utm_source=literature-triage-four-routes">Start Project</a></p>
+<p><a href="../">← HumanPen Notes</a> · <a href="https://humanpen.net/?utm_source=pages-blog&amp;utm_medium=referral&amp;utm_campaign=spiral">humanpen.net</a></p>
+<!-- hp-related -->
+<h2>Related reading</h2><ul><li><a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/academic-language-tools-four-routes.html">Sentence-level language tools versus a document-level rewrite</a></li><li><a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/editage-vs-humanpen-projects.html">Editage vs HumanPen Start Project</a></li><li><a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/endnote-vs-humanpen-projects.html">EndNote vs HumanPen Start Project</a></li><li><a href="https://lwjuolpenncjbs.github.io/humanpen-blog/articles/major-revision-four-workstreams.html">Major revision, four workstreams</a></li></ul>
+<footer>HumanPen · research-project workflow · no score guarantee.</footer>
+</body></html>
