@@ -51,3 +51,18 @@ Charles Li / HumanPen. "How to read an AI writing detection report: fields, band
 ## Optional
 
 - Sitemap: https://lwjuolpenncjbs.github.io/humanpen-blog/sitemap.xml
+
+## Research project workflow (12 guides, 24 Nov 2026)
+
+- A reviewer response in three days: triage, re-analysis and the letter, with HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/a-reviewer-response-letter-in-three-days.html
+- When a student graduates: the analysis handover that keeps a lab's results reproducible with HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/handover-when-a-student-graduates.html
+- The desk check before you submit: what an editor sees first, and where HumanPen Start Project fits: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/journal-desk-check-before-you-submit.html
+- A PhD student's first paper in one term: a week-by-week plan that survives HumanPen Start Project's plan step: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/phd-student-first-paper-in-one-term.html
+- A principal investigator's handover brief: what to write down before HumanPen Start Project touches your data: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/principal-investigator-handover-brief.html
+- Moving an SPSS analysis to R: the migration checklist we use on HumanPen Start Project jobs: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/spss-to-r-migration-checklist.html
+- Moving a Stata analysis to Python: a migration checklist for HumanPen Start Project jobs: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/stata-to-python-migration-checklist.html
+- How a statistician reviews an outsourced analysis: a checklist that works on HumanPen Start Project deliverables: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/statistician-reviewing-an-outsourced-analysis.html
+- The week before a thesis defence: turning finished work into slides with HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/the-week-before-a-thesis-defence.html
+- Three analysts, one dataset: version discipline that holds up on HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/three-analysts-one-dataset-version-discipline.html
+- Three days before a grant deadline: what to hand to HumanPen Start Project, and what not to: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/three-days-before-a-grant-deadline.html
+- An undergraduate thesis in eight weeks: a realistic plan with HumanPen Start Project: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/undergraduate-thesis-in-eight-weeks.html
