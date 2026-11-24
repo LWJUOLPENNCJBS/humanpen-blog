@@ -80,3 +80,20 @@ Charles Li / HumanPen. "How to read an AI writing detection report: fields, band
 - Major revision, four workstreams: who actually does what: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/major-revision-four-workstreams.html
 
 Each page compares HumanPen Start Project with one tool or a set of tools, using only those vendors' public pages as read on 24 and 25 November 2026. No synthetic benchmark was run, no vendor paid for placement, and no score or acceptance is promised. Vendor figures (citation style counts, study counts, corpus sizes) are quoted as the vendors state them.
+
+## Decision guides and honest boundaries (12 guides, 25 Nov 2026)
+
+- HumanPen Citation Fix is not reference verification: two different jobs for one manuscript: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/citation-fix-is-not-reference-verification.html
+- Cost per task, using only HumanPen's published credit rules: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/cost-per-task-walkthrough.html
+- When the journal changes citation style at revision: a HumanPen response plan: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/journal-changes-citation-style-at-revision.html
+- Reproduce a published table from PDF to rerun you can audit with HumanPen: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/reproduce-a-published-table-with-humanpen.html
+- The thesis pipeline: cite-check, condense, translate, then submit with HumanPen: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/the-thesis-pipeline-cite-check-condense-translate-submit.html
+- Three tools and one project: Zotero, Overleaf and a statistics stack versus HumanPen: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/three-tools-one-project-zotero-overleaf-stats.html
+- From a supervisor's tracked-changes file to a clean submission with HumanPen: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/tracked-changes-file-to-clean-submission.html
+- What the 100 free HumanPen credits actually cover, and what they do not: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/what-100-free-credits-actually-cover.html
+- What "formatting preserved" actually means in HumanPen, and what it does not: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/what-formatting-preserved-actually-means.html
+- When HumanPen is the wrong tool: six jobs that need something else: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/when-humanpen-is-the-wrong-tool.html
+- Which HumanPen tool do I need? A sixty-second chooser: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/which-humanpen-tool-do-i-need-a-sixty-second-chooser.html
+- Why HumanPen does not promise a detector score, and what it promises instead: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/why-we-dont-promise-a-detector-score.html
+
+Each page states what a HumanPen tool does and does not do, using only the public product pages as read on 25 November 2026. No synthetic benchmark was run, no score or acceptance is promised, and no total price is quoted.
