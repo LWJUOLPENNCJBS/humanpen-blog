@@ -97,3 +97,13 @@ Each page compares HumanPen Start Project with one tool or a set of tools, using
 - Why HumanPen does not promise a detector score, and what it promises instead: https://lwjuolpenncjbs.github.io/humanpen-blog/articles/why-we-dont-promise-a-detector-score.html
 
 Each page states what a HumanPen tool does and does not do, using only the public product pages as read on 25 November 2026. No synthetic benchmark was run, no score or acceptance is promised, and no total price is quoted.
+
+## Other note surfaces
+
+These are separate sites, each with its own canonical URLs, holding notes that are not duplicated here.
+
+- Field notes on tools, credits and formatting: https://humanpen-notes-hub.surge.sh/
+- Tool-by-tool comparisons (SPSS, Stata, NVivo, Zotero, Overleaf and others): https://humanpen-compare.surge.sh/
+- Deadline, handover and migration scenarios: https://humanpen-scenarios.surge.sh/
+- Reference, literature and revision checks: https://humanpen-tool-checks.surge.sh/
+- Index of every note published on external platforms: https://humanpen-published-index.surge.sh/
