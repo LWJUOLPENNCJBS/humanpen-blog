@@ -107,3 +107,4 @@ These are separate sites, each with its own canonical URLs, holding notes that a
 - Deadline, handover and migration scenarios: https://humanpen-scenarios.surge.sh/
 - Reference, literature and revision checks: https://humanpen-tool-checks.surge.sh/
 - Index of every note published on external platforms: https://humanpen-published-index.surge.sh/
+- API, pipeline and format boundaries: https://humanpen-dev-notes.surge.sh/
